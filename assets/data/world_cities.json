@@ -1,0 +1,2868 @@
+{
+  "version": "2.0",
+  "countries": [
+    {
+      "code": "TR",
+      "name": "Türkiye",
+      "flag": "🇹🇷",
+      "method": 13,
+      "school": 1,
+      "cities": [
+        {
+          "id": "TR_ADA",
+          "name": "Adana",
+          "lat": 37.0,
+          "lon": 35.3213,
+          "timezone": "Europe/Istanbul",
+          "region": "Akdeniz"
+        },
+        {
+          "id": "TR_ADI",
+          "name": "Adıyaman",
+          "lat": 37.7648,
+          "lon": 38.2786,
+          "timezone": "Europe/Istanbul",
+          "region": "Güneydoğu Anadolu"
+        },
+        {
+          "id": "TR_AFY",
+          "name": "Afyonkarahisar",
+          "lat": 38.7507,
+          "lon": 30.5567,
+          "timezone": "Europe/Istanbul",
+          "region": "Ege"
+        },
+        {
+          "id": "TR_AGR",
+          "name": "Ağrı",
+          "lat": 39.7191,
+          "lon": 43.0503,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_AKS",
+          "name": "Aksaray",
+          "lat": 38.3687,
+          "lon": 34.037,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_AMA",
+          "name": "Amasya",
+          "lat": 40.6499,
+          "lon": 35.8353,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_ANK",
+          "name": "Ankara",
+          "lat": 39.9334,
+          "lon": 32.8597,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_ANT",
+          "name": "Antalya",
+          "lat": 36.8969,
+          "lon": 30.7133,
+          "timezone": "Europe/Istanbul",
+          "region": "Akdeniz"
+        },
+        {
+          "id": "TR_ARD",
+          "name": "Ardahan",
+          "lat": 41.1105,
+          "lon": 42.7022,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_ART",
+          "name": "Artvin",
+          "lat": 41.1828,
+          "lon": 41.8183,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_AYD",
+          "name": "Aydın",
+          "lat": 37.856,
+          "lon": 27.8416,
+          "timezone": "Europe/Istanbul",
+          "region": "Ege"
+        },
+        {
+          "id": "TR_BAL",
+          "name": "Balıkesir",
+          "lat": 39.6484,
+          "lon": 27.8826,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_BAR",
+          "name": "Bartın",
+          "lat": 41.6344,
+          "lon": 32.3375,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_BAT",
+          "name": "Batman",
+          "lat": 37.8812,
+          "lon": 41.1351,
+          "timezone": "Europe/Istanbul",
+          "region": "Güneydoğu Anadolu"
+        },
+        {
+          "id": "TR_BOL",
+          "name": "Bolu",
+          "lat": 40.735,
+          "lon": 31.6061,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_BRD",
+          "name": "Burdur",
+          "lat": 37.7265,
+          "lon": 30.2906,
+          "timezone": "Europe/Istanbul",
+          "region": "Akdeniz"
+        },
+        {
+          "id": "TR_BRS",
+          "name": "Bursa",
+          "lat": 40.1885,
+          "lon": 29.061,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_CAN",
+          "name": "Çanakkale",
+          "lat": 40.1553,
+          "lon": 26.4142,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_CRM",
+          "name": "Çorum",
+          "lat": 40.5489,
+          "lon": 34.9533,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_DEN",
+          "name": "Denizli",
+          "lat": 37.7765,
+          "lon": 29.0864,
+          "timezone": "Europe/Istanbul",
+          "region": "Ege"
+        },
+        {
+          "id": "TR_DYB",
+          "name": "Diyarbakır",
+          "lat": 37.9144,
+          "lon": 40.2306,
+          "timezone": "Europe/Istanbul",
+          "region": "Güneydoğu Anadolu"
+        },
+        {
+          "id": "TR_DUZ",
+          "name": "Düzce",
+          "lat": 40.8438,
+          "lon": 31.1565,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_EDR",
+          "name": "Edirne",
+          "lat": 41.6818,
+          "lon": 26.5623,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_ELZ",
+          "name": "Elazığ",
+          "lat": 38.681,
+          "lon": 39.2264,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_ERC",
+          "name": "Erzincan",
+          "lat": 39.75,
+          "lon": 39.5,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_ERZ",
+          "name": "Erzurum",
+          "lat": 39.9055,
+          "lon": 41.2695,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_ESK",
+          "name": "Eskişehir",
+          "lat": 39.7667,
+          "lon": 30.5256,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_GAZ",
+          "name": "Gaziantep",
+          "lat": 37.0662,
+          "lon": 37.3833,
+          "timezone": "Europe/Istanbul",
+          "region": "Güneydoğu Anadolu"
+        },
+        {
+          "id": "TR_GIR",
+          "name": "Giresun",
+          "lat": 40.9128,
+          "lon": 38.3895,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_HAK",
+          "name": "Hakkari",
+          "lat": 37.5744,
+          "lon": 43.7408,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_HAT",
+          "name": "Hatay",
+          "lat": 36.2021,
+          "lon": 36.1603,
+          "timezone": "Europe/Istanbul",
+          "region": "Akdeniz"
+        },
+        {
+          "id": "TR_IGD",
+          "name": "Iğdır",
+          "lat": 39.9167,
+          "lon": 44.0333,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_ISP",
+          "name": "Isparta",
+          "lat": 37.7648,
+          "lon": 30.5566,
+          "timezone": "Europe/Istanbul",
+          "region": "Akdeniz"
+        },
+        {
+          "id": "TR_IST",
+          "name": "İstanbul",
+          "lat": 41.0082,
+          "lon": 28.9784,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_IZM",
+          "name": "İzmir",
+          "lat": 38.4192,
+          "lon": 27.1287,
+          "timezone": "Europe/Istanbul",
+          "region": "Ege"
+        },
+        {
+          "id": "TR_KAH",
+          "name": "Kahramanmaraş",
+          "lat": 37.5858,
+          "lon": 36.9371,
+          "timezone": "Europe/Istanbul",
+          "region": "Akdeniz"
+        },
+        {
+          "id": "TR_KAR",
+          "name": "Karaman",
+          "lat": 37.1759,
+          "lon": 33.2287,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_KRS",
+          "name": "Kars",
+          "lat": 40.6013,
+          "lon": 43.0975,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_KST",
+          "name": "Kastamonu",
+          "lat": 41.3887,
+          "lon": 33.7827,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_KAY",
+          "name": "Kayseri",
+          "lat": 38.7312,
+          "lon": 35.4787,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_KKL",
+          "name": "Kırıkkale",
+          "lat": 39.8453,
+          "lon": 33.5061,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_KLR",
+          "name": "Kırklareli",
+          "lat": 41.7333,
+          "lon": 27.2167,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_KON",
+          "name": "Konya",
+          "lat": 37.8667,
+          "lon": 32.4833,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_MAL",
+          "name": "Malatya",
+          "lat": 38.3552,
+          "lon": 38.3095,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_MAN",
+          "name": "Manisa",
+          "lat": 38.6191,
+          "lon": 27.4289,
+          "timezone": "Europe/Istanbul",
+          "region": "Ege"
+        },
+        {
+          "id": "TR_MAR",
+          "name": "Mardin",
+          "lat": 37.3212,
+          "lon": 40.7245,
+          "timezone": "Europe/Istanbul",
+          "region": "Güneydoğu Anadolu"
+        },
+        {
+          "id": "TR_MER",
+          "name": "Mersin",
+          "lat": 36.8,
+          "lon": 34.6333,
+          "timezone": "Europe/Istanbul",
+          "region": "Akdeniz"
+        },
+        {
+          "id": "TR_MUG",
+          "name": "Muğla",
+          "lat": 37.2153,
+          "lon": 28.3636,
+          "timezone": "Europe/Istanbul",
+          "region": "Ege"
+        },
+        {
+          "id": "TR_NEV",
+          "name": "Nevşehir",
+          "lat": 38.6939,
+          "lon": 34.6857,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_ORD",
+          "name": "Ordu",
+          "lat": 40.9862,
+          "lon": 37.8797,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_RIZ",
+          "name": "Rize",
+          "lat": 41.0201,
+          "lon": 40.5234,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_SAK",
+          "name": "Sakarya",
+          "lat": 40.7731,
+          "lon": 30.3948,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_SAM",
+          "name": "Samsun",
+          "lat": 41.2928,
+          "lon": 36.3313,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_SAN",
+          "name": "Şanlıurfa",
+          "lat": 37.1591,
+          "lon": 38.7969,
+          "timezone": "Europe/Istanbul",
+          "region": "Güneydoğu Anadolu"
+        },
+        {
+          "id": "TR_SIV",
+          "name": "Sivas",
+          "lat": 39.7477,
+          "lon": 37.0179,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_TEK",
+          "name": "Tekirdağ",
+          "lat": 40.9833,
+          "lon": 27.5167,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_TOK",
+          "name": "Tokat",
+          "lat": 40.3167,
+          "lon": 36.55,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_TRZ",
+          "name": "Trabzon",
+          "lat": 41.0015,
+          "lon": 39.7178,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_USK",
+          "name": "Uşak",
+          "lat": 38.6823,
+          "lon": 29.4082,
+          "timezone": "Europe/Istanbul",
+          "region": "Ege"
+        },
+        {
+          "id": "TR_VAN",
+          "name": "Van",
+          "lat": 38.4891,
+          "lon": 43.4089,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_YOZ",
+          "name": "Yozgat",
+          "lat": 39.8181,
+          "lon": 34.8147,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_ZON",
+          "name": "Zonguldak",
+          "lat": 41.4564,
+          "lon": 31.7987,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_BAY",
+          "name": "Bayburt",
+          "lat": 40.2563,
+          "lon": 40.2229,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_BIL",
+          "name": "Bilecik",
+          "lat": 40.1506,
+          "lon": 29.9794,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_BNG",
+          "name": "Bingöl",
+          "lat": 38.8856,
+          "lon": 40.4969,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_BIT",
+          "name": "Bitlis",
+          "lat": 38.4006,
+          "lon": 42.1096,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_GUM",
+          "name": "Gümüşhane",
+          "lat": 40.4386,
+          "lon": 39.5086,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_KRB",
+          "name": "Karabük",
+          "lat": 41.2005,
+          "lon": 32.6273,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_KIL",
+          "name": "Kilis",
+          "lat": 36.7184,
+          "lon": 37.1212,
+          "timezone": "Europe/Istanbul",
+          "region": "Güneydoğu Anadolu"
+        },
+        {
+          "id": "TR_KOC",
+          "name": "Kocaeli",
+          "lat": 40.8533,
+          "lon": 29.8815,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_KUT",
+          "name": "Kütahya",
+          "lat": 39.4167,
+          "lon": 29.9833,
+          "timezone": "Europe/Istanbul",
+          "region": "Ege"
+        },
+        {
+          "id": "TR_KRH",
+          "name": "Kırşehir",
+          "lat": 39.1425,
+          "lon": 34.1709,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_MUS",
+          "name": "Muş",
+          "lat": 38.7432,
+          "lon": 41.5064,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_NIG",
+          "name": "Niğde",
+          "lat": 37.9667,
+          "lon": 34.6833,
+          "timezone": "Europe/Istanbul",
+          "region": "İç Anadolu"
+        },
+        {
+          "id": "TR_OSM",
+          "name": "Osmaniye",
+          "lat": 37.0742,
+          "lon": 36.2472,
+          "timezone": "Europe/Istanbul",
+          "region": "Akdeniz"
+        },
+        {
+          "id": "TR_SII",
+          "name": "Siirt",
+          "lat": 37.9293,
+          "lon": 41.9420,
+          "timezone": "Europe/Istanbul",
+          "region": "Güneydoğu Anadolu"
+        },
+        {
+          "id": "TR_SIN",
+          "name": "Sinop",
+          "lat": 42.0265,
+          "lon": 35.1551,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        },
+        {
+          "id": "TR_SRN",
+          "name": "Şırnak",
+          "lat": 37.5164,
+          "lon": 42.4611,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_TUN",
+          "name": "Tunceli",
+          "lat": 39.1071,
+          "lon": 39.5481,
+          "timezone": "Europe/Istanbul",
+          "region": "Doğu Anadolu"
+        },
+        {
+          "id": "TR_YAL",
+          "name": "Yalova",
+          "lat": 40.6556,
+          "lon": 29.2760,
+          "timezone": "Europe/Istanbul",
+          "region": "Marmara"
+        },
+        {
+          "id": "TR_CNK",
+          "name": "Çankırı",
+          "lat": 40.6013,
+          "lon": 33.6134,
+          "timezone": "Europe/Istanbul",
+          "region": "Karadeniz"
+        }
+      ]
+    },
+    {
+      "code": "SA",
+      "name": "Suudi Arabistan",
+      "flag": "🇸🇦",
+      "method": 4,
+      "school": 0,
+      "cities": [
+        {
+          "id": "SA_MEC",
+          "name": "Mekke",
+          "lat": 21.3891,
+          "lon": 39.8579,
+          "timezone": "Asia/Riyadh"
+        },
+        {
+          "id": "SA_MED",
+          "name": "Medine",
+          "lat": 24.5247,
+          "lon": 39.5692,
+          "timezone": "Asia/Riyadh"
+        },
+        {
+          "id": "SA_RYD",
+          "name": "Riyad",
+          "lat": 24.6877,
+          "lon": 46.7219,
+          "timezone": "Asia/Riyadh"
+        },
+        {
+          "id": "SA_JED",
+          "name": "Cidde",
+          "lat": 21.4858,
+          "lon": 39.1925,
+          "timezone": "Asia/Riyadh"
+        },
+        {
+          "id": "SA_DAM",
+          "name": "Dammam",
+          "lat": 26.4207,
+          "lon": 50.0888,
+          "timezone": "Asia/Riyadh"
+        },
+        {
+          "id": "SA_TAI",
+          "name": "Taif",
+          "lat": 21.4373,
+          "lon": 40.5127,
+          "timezone": "Asia/Riyadh"
+        },
+        {
+          "id": "SA_ABH",
+          "name": "Abha",
+          "lat": 18.2164,
+          "lon": 42.5053,
+          "timezone": "Asia/Riyadh"
+        },
+        {
+          "id": "SA_TAB",
+          "name": "Tebük",
+          "lat": 28.3998,
+          "lon": 36.57,
+          "timezone": "Asia/Riyadh"
+        }
+      ]
+    },
+    {
+      "code": "AE",
+      "name": "Birleşik Arap Emirlikleri",
+      "flag": "🇦🇪",
+      "method": 16,
+      "school": 0,
+      "cities": [
+        {
+          "id": "AE_DXB",
+          "name": "Dubai",
+          "lat": 25.2048,
+          "lon": 55.2708,
+          "timezone": "Asia/Dubai"
+        },
+        {
+          "id": "AE_AUH",
+          "name": "Abu Dabi",
+          "lat": 24.4539,
+          "lon": 54.3773,
+          "timezone": "Asia/Dubai"
+        },
+        {
+          "id": "AE_SHJ",
+          "name": "Şarjah",
+          "lat": 25.3463,
+          "lon": 55.4209,
+          "timezone": "Asia/Dubai"
+        },
+        {
+          "id": "AE_AJM",
+          "name": "Acman",
+          "lat": 25.4052,
+          "lon": 55.5136,
+          "timezone": "Asia/Dubai"
+        }
+      ]
+    },
+    {
+      "code": "KW",
+      "name": "Kuveyt",
+      "flag": "🇰🇼",
+      "method": 9,
+      "school": 0,
+      "cities": [
+        {
+          "id": "KW_KWT",
+          "name": "Kuveyt Şehri",
+          "lat": 29.3759,
+          "lon": 47.9774,
+          "timezone": "Asia/Kuwait"
+        },
+        {
+          "id": "KW_HAW",
+          "name": "Hawalli",
+          "lat": 29.333,
+          "lon": 48.0322,
+          "timezone": "Asia/Kuwait"
+        }
+      ]
+    },
+    {
+      "code": "QA",
+      "name": "Katar",
+      "flag": "🇶🇦",
+      "method": 10,
+      "school": 0,
+      "cities": [
+        {
+          "id": "QA_DOH",
+          "name": "Doha",
+          "lat": 25.2854,
+          "lon": 51.531,
+          "timezone": "Asia/Qatar"
+        },
+        {
+          "id": "QA_RAY",
+          "name": "Ar-Rayyan",
+          "lat": 25.2919,
+          "lon": 51.4244,
+          "timezone": "Asia/Qatar"
+        }
+      ]
+    },
+    {
+      "code": "BH",
+      "name": "Bahreyn",
+      "flag": "🇧🇭",
+      "method": 8,
+      "school": 0,
+      "cities": [
+        {
+          "id": "BH_MNM",
+          "name": "Manama",
+          "lat": 26.2235,
+          "lon": 50.5876,
+          "timezone": "Asia/Bahrain"
+        },
+        {
+          "id": "BH_RIF",
+          "name": "Rifa",
+          "lat": 26.1299,
+          "lon": 50.555,
+          "timezone": "Asia/Bahrain"
+        }
+      ]
+    },
+    {
+      "code": "OM",
+      "name": "Umman",
+      "flag": "🇴🇲",
+      "method": 8,
+      "school": 0,
+      "cities": [
+        {
+          "id": "OM_MCT",
+          "name": "Maskat",
+          "lat": 23.588,
+          "lon": 58.3829,
+          "timezone": "Asia/Muscat"
+        },
+        {
+          "id": "OM_SLL",
+          "name": "Salalah",
+          "lat": 17.0151,
+          "lon": 54.0924,
+          "timezone": "Asia/Muscat"
+        },
+        {
+          "id": "OM_SUR",
+          "name": "Sur",
+          "lat": 22.5658,
+          "lon": 59.5289,
+          "timezone": "Asia/Muscat"
+        }
+      ]
+    },
+    {
+      "code": "YE",
+      "name": "Yemen",
+      "flag": "🇾🇪",
+      "method": 4,
+      "school": 0,
+      "cities": [
+        {
+          "id": "YE_SAH",
+          "name": "Sana",
+          "lat": 15.3694,
+          "lon": 44.191,
+          "timezone": "Asia/Aden"
+        },
+        {
+          "id": "YE_ADE",
+          "name": "Aden",
+          "lat": 12.7797,
+          "lon": 45.0338,
+          "timezone": "Asia/Aden"
+        },
+        {
+          "id": "YE_TAI",
+          "name": "Taiz",
+          "lat": 13.5797,
+          "lon": 44.021,
+          "timezone": "Asia/Aden"
+        }
+      ]
+    },
+    {
+      "code": "JO",
+      "name": "Ürdün",
+      "flag": "🇯🇴",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "JO_AMM",
+          "name": "Amman",
+          "lat": 31.9522,
+          "lon": 35.9333,
+          "timezone": "Asia/Amman"
+        },
+        {
+          "id": "JO_ZRQ",
+          "name": "Zerka",
+          "lat": 32.0728,
+          "lon": 36.088,
+          "timezone": "Asia/Amman"
+        },
+        {
+          "id": "JO_AQB",
+          "name": "Akabe",
+          "lat": 29.5321,
+          "lon": 35.0063,
+          "timezone": "Asia/Amman"
+        }
+      ]
+    },
+    {
+      "code": "SY",
+      "name": "Suriye",
+      "flag": "🇸🇾",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "SY_DAM",
+          "name": "Şam",
+          "lat": 33.5102,
+          "lon": 36.2913,
+          "timezone": "Asia/Damascus"
+        },
+        {
+          "id": "SY_ALE",
+          "name": "Halep",
+          "lat": 36.2021,
+          "lon": 37.1343,
+          "timezone": "Asia/Damascus"
+        },
+        {
+          "id": "SY_HMS",
+          "name": "Humus",
+          "lat": 34.7324,
+          "lon": 36.7137,
+          "timezone": "Asia/Damascus"
+        }
+      ]
+    },
+    {
+      "code": "LB",
+      "name": "Lübnan",
+      "flag": "🇱🇧",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "LB_BEY",
+          "name": "Beyrut",
+          "lat": 33.8938,
+          "lon": 35.5018,
+          "timezone": "Asia/Beirut"
+        },
+        {
+          "id": "LB_TRP",
+          "name": "Trablus",
+          "lat": 34.4367,
+          "lon": 35.8497,
+          "timezone": "Asia/Beirut"
+        }
+      ]
+    },
+    {
+      "code": "PS",
+      "name": "Filistin",
+      "flag": "🇵🇸",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "PS_JRS",
+          "name": "Kudüs",
+          "lat": 31.7683,
+          "lon": 35.2137,
+          "timezone": "Asia/Gaza"
+        },
+        {
+          "id": "PS_GZA",
+          "name": "Gazze",
+          "lat": 31.5017,
+          "lon": 34.4674,
+          "timezone": "Asia/Gaza"
+        },
+        {
+          "id": "PS_RMH",
+          "name": "Ramallah",
+          "lat": 31.8996,
+          "lon": 35.2042,
+          "timezone": "Asia/Gaza"
+        }
+      ]
+    },
+    {
+      "code": "IQ",
+      "name": "Irak",
+      "flag": "🇮🇶",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "IQ_BGD",
+          "name": "Bağdat",
+          "lat": 33.3152,
+          "lon": 44.3661,
+          "timezone": "Asia/Baghdad"
+        },
+        {
+          "id": "IQ_BSR",
+          "name": "Basra",
+          "lat": 30.5085,
+          "lon": 47.7833,
+          "timezone": "Asia/Baghdad"
+        },
+        {
+          "id": "IQ_MSL",
+          "name": "Musul",
+          "lat": 36.335,
+          "lon": 43.1189,
+          "timezone": "Asia/Baghdad"
+        },
+        {
+          "id": "IQ_NJF",
+          "name": "Necef",
+          "lat": 32.0018,
+          "lon": 44.3358,
+          "timezone": "Asia/Baghdad"
+        },
+        {
+          "id": "IQ_KRK",
+          "name": "Kerkük",
+          "lat": 35.4681,
+          "lon": 44.3922,
+          "timezone": "Asia/Baghdad"
+        }
+      ]
+    },
+    {
+      "code": "IR",
+      "name": "İran",
+      "flag": "🇮🇷",
+      "method": 7,
+      "school": 0,
+      "cities": [
+        {
+          "id": "IR_THR",
+          "name": "Tahran",
+          "lat": 35.6892,
+          "lon": 51.389,
+          "timezone": "Asia/Tehran"
+        },
+        {
+          "id": "IR_MSH",
+          "name": "Meşhed",
+          "lat": 36.2605,
+          "lon": 59.6168,
+          "timezone": "Asia/Tehran"
+        },
+        {
+          "id": "IR_ISF",
+          "name": "İsfahan",
+          "lat": 32.6546,
+          "lon": 51.668,
+          "timezone": "Asia/Tehran"
+        },
+        {
+          "id": "IR_TBZ",
+          "name": "Tebriz",
+          "lat": 38.08,
+          "lon": 46.2919,
+          "timezone": "Asia/Tehran"
+        },
+        {
+          "id": "IR_SHZ",
+          "name": "Şiraz",
+          "lat": 29.5918,
+          "lon": 52.5836,
+          "timezone": "Asia/Tehran"
+        }
+      ]
+    },
+    {
+      "code": "PK",
+      "name": "Pakistan",
+      "flag": "🇵🇰",
+      "method": 1,
+      "school": 1,
+      "cities": [
+        {
+          "id": "PK_KHI",
+          "name": "Karaçi",
+          "lat": 24.8607,
+          "lon": 67.0011,
+          "timezone": "Asia/Karachi"
+        },
+        {
+          "id": "PK_LHR",
+          "name": "Lahor",
+          "lat": 31.5204,
+          "lon": 74.3587,
+          "timezone": "Asia/Karachi"
+        },
+        {
+          "id": "PK_ISB",
+          "name": "İslamabad",
+          "lat": 33.7294,
+          "lon": 73.0931,
+          "timezone": "Asia/Karachi"
+        },
+        {
+          "id": "PK_PEW",
+          "name": "Peşaver",
+          "lat": 34.0151,
+          "lon": 71.5249,
+          "timezone": "Asia/Karachi"
+        },
+        {
+          "id": "PK_LYP",
+          "name": "Faysalabad",
+          "lat": 31.4504,
+          "lon": 73.135,
+          "timezone": "Asia/Karachi"
+        },
+        {
+          "id": "PK_RWP",
+          "name": "Ravalpindi",
+          "lat": 33.5973,
+          "lon": 73.0427,
+          "timezone": "Asia/Karachi"
+        },
+        {
+          "id": "PK_QTA",
+          "name": "Kuetta",
+          "lat": 30.1798,
+          "lon": 66.975,
+          "timezone": "Asia/Karachi"
+        }
+      ]
+    },
+    {
+      "code": "BD",
+      "name": "Bangladeş",
+      "flag": "🇧🇩",
+      "method": 1,
+      "school": 1,
+      "cities": [
+        {
+          "id": "BD_DAC",
+          "name": "Dakka",
+          "lat": 23.8103,
+          "lon": 90.4125,
+          "timezone": "Asia/Dhaka"
+        },
+        {
+          "id": "BD_CGP",
+          "name": "Chittagong",
+          "lat": 22.3569,
+          "lon": 91.7832,
+          "timezone": "Asia/Dhaka"
+        },
+        {
+          "id": "BD_SYL",
+          "name": "Sylhet",
+          "lat": 24.8949,
+          "lon": 91.8687,
+          "timezone": "Asia/Dhaka"
+        },
+        {
+          "id": "BD_KHL",
+          "name": "Khulna",
+          "lat": 22.8456,
+          "lon": 89.5403,
+          "timezone": "Asia/Dhaka"
+        }
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "Hindistan",
+      "flag": "🇮🇳",
+      "method": 1,
+      "school": 1,
+      "cities": [
+        {
+          "id": "IN_DEL",
+          "name": "Yeni Delhi",
+          "lat": 28.6139,
+          "lon": 77.209,
+          "timezone": "Asia/Kolkata"
+        },
+        {
+          "id": "IN_BOM",
+          "name": "Mumbai",
+          "lat": 19.076,
+          "lon": 72.8777,
+          "timezone": "Asia/Kolkata"
+        },
+        {
+          "id": "IN_HYD",
+          "name": "Haydarabad",
+          "lat": 17.385,
+          "lon": 78.4867,
+          "timezone": "Asia/Kolkata"
+        },
+        {
+          "id": "IN_CCU",
+          "name": "Kalküta",
+          "lat": 22.5726,
+          "lon": 88.3639,
+          "timezone": "Asia/Kolkata"
+        },
+        {
+          "id": "IN_MAA",
+          "name": "Chennai",
+          "lat": 13.0827,
+          "lon": 80.2707,
+          "timezone": "Asia/Kolkata"
+        },
+        {
+          "id": "IN_BLR",
+          "name": "Bangalore",
+          "lat": 12.9716,
+          "lon": 77.5946,
+          "timezone": "Asia/Kolkata"
+        },
+        {
+          "id": "IN_LKO",
+          "name": "Lucknow",
+          "lat": 26.8467,
+          "lon": 80.9462,
+          "timezone": "Asia/Kolkata"
+        }
+      ]
+    },
+    {
+      "code": "AF",
+      "name": "Afganistan",
+      "flag": "🇦🇫",
+      "method": 1,
+      "school": 1,
+      "cities": [
+        {
+          "id": "AF_KBL",
+          "name": "Kabil",
+          "lat": 34.5553,
+          "lon": 69.2075,
+          "timezone": "Asia/Kabul"
+        },
+        {
+          "id": "AF_KDH",
+          "name": "Kandahar",
+          "lat": 31.613,
+          "lon": 65.7372,
+          "timezone": "Asia/Kabul"
+        },
+        {
+          "id": "AF_HEA",
+          "name": "Herat",
+          "lat": 34.3482,
+          "lon": 62.204,
+          "timezone": "Asia/Kabul"
+        },
+        {
+          "id": "AF_MZR",
+          "name": "Mezar-ı Şerif",
+          "lat": 36.7069,
+          "lon": 67.111,
+          "timezone": "Asia/Kabul"
+        }
+      ]
+    },
+    {
+      "code": "MY",
+      "name": "Malezya",
+      "flag": "🇲🇾",
+      "method": 17,
+      "school": 1,
+      "cities": [
+        {
+          "id": "MY_KUL",
+          "name": "Kuala Lumpur",
+          "lat": 3.139,
+          "lon": 101.6869,
+          "timezone": "Asia/Kuala_Lumpur"
+        },
+        {
+          "id": "MY_PEN",
+          "name": "Penang",
+          "lat": 5.4141,
+          "lon": 100.3288,
+          "timezone": "Asia/Kuala_Lumpur"
+        },
+        {
+          "id": "MY_JHB",
+          "name": "Johor Bahru",
+          "lat": 1.4927,
+          "lon": 103.7414,
+          "timezone": "Asia/Kuala_Lumpur"
+        },
+        {
+          "id": "MY_KCH",
+          "name": "Kuching",
+          "lat": 1.5497,
+          "lon": 110.3626,
+          "timezone": "Asia/Kuching"
+        },
+        {
+          "id": "MY_IPN",
+          "name": "Ipoh",
+          "lat": 4.5975,
+          "lon": 101.0901,
+          "timezone": "Asia/Kuala_Lumpur"
+        }
+      ]
+    },
+    {
+      "code": "ID",
+      "name": "Endonezya",
+      "flag": "🇮🇩",
+      "method": 20,
+      "school": 1,
+      "cities": [
+        {
+          "id": "ID_JKT",
+          "name": "Cakarta",
+          "lat": -6.2088,
+          "lon": 106.8456,
+          "timezone": "Asia/Jakarta"
+        },
+        {
+          "id": "ID_SUB",
+          "name": "Surabaya",
+          "lat": -7.2575,
+          "lon": 112.7521,
+          "timezone": "Asia/Jakarta"
+        },
+        {
+          "id": "ID_BDO",
+          "name": "Bandung",
+          "lat": -6.9175,
+          "lon": 107.6191,
+          "timezone": "Asia/Jakarta"
+        },
+        {
+          "id": "ID_MES",
+          "name": "Medan",
+          "lat": 3.5952,
+          "lon": 98.6722,
+          "timezone": "Asia/Jakarta"
+        },
+        {
+          "id": "ID_UPG",
+          "name": "Makassar",
+          "lat": -5.1477,
+          "lon": 119.4327,
+          "timezone": "Asia/Makassar"
+        },
+        {
+          "id": "ID_YOG",
+          "name": "Yogyakarta",
+          "lat": -7.7956,
+          "lon": 110.3695,
+          "timezone": "Asia/Jakarta"
+        },
+        {
+          "id": "ID_SOC",
+          "name": "Solo",
+          "lat": -7.5755,
+          "lon": 110.8243,
+          "timezone": "Asia/Jakarta"
+        }
+      ]
+    },
+    {
+      "code": "SG",
+      "name": "Singapur",
+      "flag": "🇸🇬",
+      "method": 11,
+      "school": 1,
+      "cities": [
+        {
+          "id": "SG_SIN",
+          "name": "Singapur",
+          "lat": 1.3521,
+          "lon": 103.8198,
+          "timezone": "Asia/Singapore"
+        }
+      ]
+    },
+    {
+      "code": "EG",
+      "name": "Mısır",
+      "flag": "🇪🇬",
+      "method": 5,
+      "school": 0,
+      "cities": [
+        {
+          "id": "EG_CAI",
+          "name": "Kahire",
+          "lat": 30.0444,
+          "lon": 31.2357,
+          "timezone": "Africa/Cairo"
+        },
+        {
+          "id": "EG_ALY",
+          "name": "İskenderiye",
+          "lat": 31.2001,
+          "lon": 29.9187,
+          "timezone": "Africa/Cairo"
+        },
+        {
+          "id": "EG_GIZ",
+          "name": "Gize",
+          "lat": 30.0131,
+          "lon": 31.2089,
+          "timezone": "Africa/Cairo"
+        },
+        {
+          "id": "EG_ASW",
+          "name": "Asvan",
+          "lat": 24.0889,
+          "lon": 32.8998,
+          "timezone": "Africa/Cairo"
+        },
+        {
+          "id": "EG_MNS",
+          "name": "Mansura",
+          "lat": 31.0364,
+          "lon": 31.3807,
+          "timezone": "Africa/Cairo"
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Fas",
+      "flag": "🇲🇦",
+      "method": 21,
+      "school": 1,
+      "cities": [
+        {
+          "id": "MA_RBA",
+          "name": "Rabat",
+          "lat": 34.0209,
+          "lon": -6.8416,
+          "timezone": "Africa/Casablanca"
+        },
+        {
+          "id": "MA_CAS",
+          "name": "Kazablanka",
+          "lat": 33.5731,
+          "lon": -7.5898,
+          "timezone": "Africa/Casablanca"
+        },
+        {
+          "id": "MA_FEZ",
+          "name": "Fez",
+          "lat": 34.0333,
+          "lon": -5.0,
+          "timezone": "Africa/Casablanca"
+        },
+        {
+          "id": "MA_MRK",
+          "name": "Marakeş",
+          "lat": 31.6295,
+          "lon": -7.9811,
+          "timezone": "Africa/Casablanca"
+        },
+        {
+          "id": "MA_TNG",
+          "name": "Tanca",
+          "lat": 35.7595,
+          "lon": -5.834,
+          "timezone": "Africa/Casablanca"
+        }
+      ]
+    },
+    {
+      "code": "DZ",
+      "name": "Cezayir",
+      "flag": "🇩🇿",
+      "method": 19,
+      "school": 1,
+      "cities": [
+        {
+          "id": "DZ_ALG",
+          "name": "Cezayir",
+          "lat": 36.7372,
+          "lon": 3.0865,
+          "timezone": "Africa/Algiers"
+        },
+        {
+          "id": "DZ_ORN",
+          "name": "Oran",
+          "lat": 35.6969,
+          "lon": -0.6331,
+          "timezone": "Africa/Algiers"
+        },
+        {
+          "id": "DZ_CST",
+          "name": "Konstantin",
+          "lat": 36.365,
+          "lon": 6.6147,
+          "timezone": "Africa/Algiers"
+        },
+        {
+          "id": "DZ_AAE",
+          "name": "Annaba",
+          "lat": 36.9,
+          "lon": 7.7667,
+          "timezone": "Africa/Algiers"
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "name": "Tunus",
+      "flag": "🇹🇳",
+      "method": 18,
+      "school": 1,
+      "cities": [
+        {
+          "id": "TN_TUN",
+          "name": "Tunus",
+          "lat": 36.8065,
+          "lon": 10.1815,
+          "timezone": "Africa/Tunis"
+        },
+        {
+          "id": "TN_SFA",
+          "name": "Sfaks",
+          "lat": 34.7478,
+          "lon": 10.7661,
+          "timezone": "Africa/Tunis"
+        },
+        {
+          "id": "TN_SUS",
+          "name": "Sousse",
+          "lat": 35.8333,
+          "lon": 10.6333,
+          "timezone": "Africa/Tunis"
+        }
+      ]
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "flag": "🇱🇾",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "LY_TIP",
+          "name": "Trablus",
+          "lat": 32.9022,
+          "lon": 13.18,
+          "timezone": "Africa/Tripoli"
+        },
+        {
+          "id": "LY_BEN",
+          "name": "Bingazi",
+          "lat": 32.115,
+          "lon": 20.0686,
+          "timezone": "Africa/Tripoli"
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "flag": "🇸🇩",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "SD_KRT",
+          "name": "Hartum",
+          "lat": 15.5007,
+          "lon": 32.5599,
+          "timezone": "Africa/Khartoum"
+        },
+        {
+          "id": "SD_OMS",
+          "name": "Omdurman",
+          "lat": 15.65,
+          "lon": 32.48,
+          "timezone": "Africa/Khartoum"
+        },
+        {
+          "id": "SD_PZU",
+          "name": "Port Sudan",
+          "lat": 19.6158,
+          "lon": 37.2164,
+          "timezone": "Africa/Khartoum"
+        }
+      ]
+    },
+    {
+      "code": "SO",
+      "name": "Somali",
+      "flag": "🇸🇴",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "SO_MGQ",
+          "name": "Mogadişu",
+          "lat": 2.0469,
+          "lon": 45.3182,
+          "timezone": "Africa/Mogadishu"
+        },
+        {
+          "id": "SO_KIS",
+          "name": "Kismaayo",
+          "lat": 0.358,
+          "lon": 42.5454,
+          "timezone": "Africa/Mogadishu"
+        }
+      ]
+    },
+    {
+      "code": "NG",
+      "name": "Nijerya",
+      "flag": "🇳🇬",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "NG_LOS",
+          "name": "Lagos",
+          "lat": 6.5244,
+          "lon": 3.3792,
+          "timezone": "Africa/Lagos"
+        },
+        {
+          "id": "NG_KAN",
+          "name": "Kano",
+          "lat": 12.0022,
+          "lon": 8.592,
+          "timezone": "Africa/Lagos"
+        },
+        {
+          "id": "NG_ABV",
+          "name": "Abuja",
+          "lat": 9.0765,
+          "lon": 7.3986,
+          "timezone": "Africa/Lagos"
+        },
+        {
+          "id": "NG_KAD",
+          "name": "Kaduna",
+          "lat": 10.5222,
+          "lon": 7.4383,
+          "timezone": "Africa/Lagos"
+        }
+      ]
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "flag": "🇸🇳",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "SN_DKR",
+          "name": "Dakar",
+          "lat": 14.7167,
+          "lon": -17.4677,
+          "timezone": "Africa/Dakar"
+        },
+        {
+          "id": "SN_ZIG",
+          "name": "Ziguinchor",
+          "lat": 12.5833,
+          "lon": -16.2719,
+          "timezone": "Africa/Dakar"
+        }
+      ]
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "flag": "🇲🇱",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "ML_BMK",
+          "name": "Bamako",
+          "lat": 12.6392,
+          "lon": -8.0029,
+          "timezone": "Africa/Bamako"
+        },
+        {
+          "id": "ML_TBT",
+          "name": "Timbuktu",
+          "lat": 16.7666,
+          "lon": -3.0026,
+          "timezone": "Africa/Bamako"
+        }
+      ]
+    },
+    {
+      "code": "ET",
+      "name": "Etiyopya",
+      "flag": "🇪🇹",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "ET_ADD",
+          "name": "Addis Ababa",
+          "lat": 9.032,
+          "lon": 38.7423,
+          "timezone": "Africa/Addis_Ababa"
+        },
+        {
+          "id": "ET_DIR",
+          "name": "Dire Dawa",
+          "lat": 9.59,
+          "lon": 41.86,
+          "timezone": "Africa/Addis_Ababa"
+        }
+      ]
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "flag": "🇰🇪",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "KE_NBO",
+          "name": "Nairobi",
+          "lat": -1.2921,
+          "lon": 36.8219,
+          "timezone": "Africa/Nairobi"
+        },
+        {
+          "id": "KE_MBA",
+          "name": "Mombasa",
+          "lat": -4.0435,
+          "lon": 39.6682,
+          "timezone": "Africa/Nairobi"
+        }
+      ]
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzanya",
+      "flag": "🇹🇿",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "TZ_DAR",
+          "name": "Dar es Salaam",
+          "lat": -6.7924,
+          "lon": 39.2083,
+          "timezone": "Africa/Dar_es_Salaam"
+        },
+        {
+          "id": "TZ_ZNZ",
+          "name": "Zanzibar",
+          "lat": -6.163,
+          "lon": 39.198,
+          "timezone": "Africa/Dar_es_Salaam"
+        }
+      ]
+    },
+    {
+      "code": "ZA",
+      "name": "Güney Afrika",
+      "flag": "🇿🇦",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "ZA_JNB",
+          "name": "Johannesburg",
+          "lat": -26.2041,
+          "lon": 28.0473,
+          "timezone": "Africa/Johannesburg"
+        },
+        {
+          "id": "ZA_CPT",
+          "name": "Cape Town",
+          "lat": -33.9249,
+          "lon": 18.4241,
+          "timezone": "Africa/Johannesburg"
+        },
+        {
+          "id": "ZA_DUR",
+          "name": "Durban",
+          "lat": -29.8587,
+          "lon": 31.0218,
+          "timezone": "Africa/Johannesburg"
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Almanya",
+      "flag": "🇩🇪",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "DE_BER",
+          "name": "Berlin",
+          "lat": 52.52,
+          "lon": 13.405,
+          "timezone": "Europe/Berlin"
+        },
+        {
+          "id": "DE_MUC",
+          "name": "Münih",
+          "lat": 48.1351,
+          "lon": 11.582,
+          "timezone": "Europe/Berlin"
+        },
+        {
+          "id": "DE_HAM",
+          "name": "Hamburg",
+          "lat": 53.5753,
+          "lon": 10.0153,
+          "timezone": "Europe/Berlin"
+        },
+        {
+          "id": "DE_CGN",
+          "name": "Köln",
+          "lat": 50.9333,
+          "lon": 6.95,
+          "timezone": "Europe/Berlin"
+        },
+        {
+          "id": "DE_FRA",
+          "name": "Frankfurt",
+          "lat": 50.1109,
+          "lon": 8.6821,
+          "timezone": "Europe/Berlin"
+        },
+        {
+          "id": "DE_STR",
+          "name": "Stuttgart",
+          "lat": 48.7758,
+          "lon": 9.1829,
+          "timezone": "Europe/Berlin"
+        },
+        {
+          "id": "DE_DUS",
+          "name": "Düsseldorf",
+          "lat": 51.2217,
+          "lon": 6.7762,
+          "timezone": "Europe/Berlin"
+        }
+      ]
+    },
+    {
+      "code": "FR",
+      "name": "Fransa",
+      "flag": "🇫🇷",
+      "method": 12,
+      "school": 1,
+      "cities": [
+        {
+          "id": "FR_PAR",
+          "name": "Paris",
+          "lat": 48.8566,
+          "lon": 2.3522,
+          "timezone": "Europe/Paris"
+        },
+        {
+          "id": "FR_LYS",
+          "name": "Lyon",
+          "lat": 45.764,
+          "lon": 4.8357,
+          "timezone": "Europe/Paris"
+        },
+        {
+          "id": "FR_MRS",
+          "name": "Marsilya",
+          "lat": 43.2965,
+          "lon": 5.3698,
+          "timezone": "Europe/Paris"
+        },
+        {
+          "id": "FR_TLS",
+          "name": "Toulouse",
+          "lat": 43.6047,
+          "lon": 1.4442,
+          "timezone": "Europe/Paris"
+        },
+        {
+          "id": "FR_SXB",
+          "name": "Strasbourg",
+          "lat": 48.5734,
+          "lon": 7.7521,
+          "timezone": "Europe/Paris"
+        },
+        {
+          "id": "FR_NTE",
+          "name": "Nantes",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "timezone": "Europe/Paris"
+        }
+      ]
+    },
+    {
+      "code": "GB",
+      "name": "Birleşik Krallık",
+      "flag": "🇬🇧",
+      "method": 15,
+      "school": 1,
+      "cities": [
+        {
+          "id": "GB_LON",
+          "name": "Londra",
+          "lat": 51.5074,
+          "lon": -0.1278,
+          "timezone": "Europe/London"
+        },
+        {
+          "id": "GB_MAN",
+          "name": "Manchester",
+          "lat": 53.4808,
+          "lon": -2.2426,
+          "timezone": "Europe/London"
+        },
+        {
+          "id": "GB_BHM",
+          "name": "Birmingham",
+          "lat": 52.4862,
+          "lon": -1.8904,
+          "timezone": "Europe/London"
+        },
+        {
+          "id": "GB_LDS",
+          "name": "Leeds",
+          "lat": 53.7997,
+          "lon": -1.5492,
+          "timezone": "Europe/London"
+        },
+        {
+          "id": "GB_BFD",
+          "name": "Bradford",
+          "lat": 53.796,
+          "lon": -1.7594,
+          "timezone": "Europe/London"
+        },
+        {
+          "id": "GB_GLA",
+          "name": "Glasgow",
+          "lat": 55.8642,
+          "lon": -4.2518,
+          "timezone": "Europe/London"
+        },
+        {
+          "id": "GB_LVP",
+          "name": "Liverpool",
+          "lat": 53.4084,
+          "lon": -2.9916,
+          "timezone": "Europe/London"
+        }
+      ]
+    },
+    {
+      "code": "NL",
+      "name": "Hollanda",
+      "flag": "🇳🇱",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "NL_AMS",
+          "name": "Amsterdam",
+          "lat": 52.3676,
+          "lon": 4.9041,
+          "timezone": "Europe/Amsterdam"
+        },
+        {
+          "id": "NL_RTM",
+          "name": "Rotterdam",
+          "lat": 51.9244,
+          "lon": 4.4777,
+          "timezone": "Europe/Amsterdam"
+        },
+        {
+          "id": "NL_HAG",
+          "name": "Lahey",
+          "lat": 52.0705,
+          "lon": 4.3007,
+          "timezone": "Europe/Amsterdam"
+        },
+        {
+          "id": "NL_UTR",
+          "name": "Utrecht",
+          "lat": 52.0907,
+          "lon": 5.1214,
+          "timezone": "Europe/Amsterdam"
+        }
+      ]
+    },
+    {
+      "code": "BE",
+      "name": "Belçika",
+      "flag": "🇧🇪",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "BE_BRU",
+          "name": "Brüksel",
+          "lat": 50.8503,
+          "lon": 4.3517,
+          "timezone": "Europe/Brussels"
+        },
+        {
+          "id": "BE_ANR",
+          "name": "Antwerp",
+          "lat": 51.2194,
+          "lon": 4.4025,
+          "timezone": "Europe/Brussels"
+        }
+      ]
+    },
+    {
+      "code": "AT",
+      "name": "Avusturya",
+      "flag": "🇦🇹",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "AT_VIE",
+          "name": "Viyana",
+          "lat": 48.2082,
+          "lon": 16.3738,
+          "timezone": "Europe/Vienna"
+        },
+        {
+          "id": "AT_GRZ",
+          "name": "Graz",
+          "lat": 47.0707,
+          "lon": 15.4395,
+          "timezone": "Europe/Vienna"
+        }
+      ]
+    },
+    {
+      "code": "CH",
+      "name": "İsviçre",
+      "flag": "🇨🇭",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "CH_ZRH",
+          "name": "Zürih",
+          "lat": 47.3769,
+          "lon": 8.5417,
+          "timezone": "Europe/Zurich"
+        },
+        {
+          "id": "CH_GVA",
+          "name": "Cenevre",
+          "lat": 46.2044,
+          "lon": 6.1432,
+          "timezone": "Europe/Zurich"
+        },
+        {
+          "id": "CH_BSL",
+          "name": "Basel",
+          "lat": 47.5596,
+          "lon": 7.5886,
+          "timezone": "Europe/Zurich"
+        }
+      ]
+    },
+    {
+      "code": "IT",
+      "name": "İtalya",
+      "flag": "🇮🇹",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "IT_ROM",
+          "name": "Roma",
+          "lat": 41.9028,
+          "lon": 12.4964,
+          "timezone": "Europe/Rome"
+        },
+        {
+          "id": "IT_MIL",
+          "name": "Milano",
+          "lat": 45.4654,
+          "lon": 9.1859,
+          "timezone": "Europe/Rome"
+        },
+        {
+          "id": "IT_NAP",
+          "name": "Napoli",
+          "lat": 40.8518,
+          "lon": 14.2681,
+          "timezone": "Europe/Rome"
+        },
+        {
+          "id": "IT_TRN",
+          "name": "Torino",
+          "lat": 45.0703,
+          "lon": 7.6869,
+          "timezone": "Europe/Rome"
+        }
+      ]
+    },
+    {
+      "code": "ES",
+      "name": "İspanya",
+      "flag": "🇪🇸",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "ES_MAD",
+          "name": "Madrid",
+          "lat": 40.4168,
+          "lon": -3.7038,
+          "timezone": "Europe/Madrid"
+        },
+        {
+          "id": "ES_BCN",
+          "name": "Barselona",
+          "lat": 41.3851,
+          "lon": 2.1734,
+          "timezone": "Europe/Madrid"
+        },
+        {
+          "id": "ES_GRX",
+          "name": "Granada",
+          "lat": 37.1773,
+          "lon": -3.5986,
+          "timezone": "Europe/Madrid"
+        },
+        {
+          "id": "ES_SVQ",
+          "name": "Sevilla",
+          "lat": 37.3891,
+          "lon": -5.9845,
+          "timezone": "Europe/Madrid"
+        }
+      ]
+    },
+    {
+      "code": "SE",
+      "name": "İsveç",
+      "flag": "🇸🇪",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "SE_STO",
+          "name": "Stokholm",
+          "lat": 59.3293,
+          "lon": 18.0686,
+          "timezone": "Europe/Stockholm"
+        },
+        {
+          "id": "SE_GOT",
+          "name": "Göteborg",
+          "lat": 57.7089,
+          "lon": 11.9746,
+          "timezone": "Europe/Stockholm"
+        },
+        {
+          "id": "SE_MAL",
+          "name": "Malmö",
+          "lat": 55.605,
+          "lon": 13.0038,
+          "timezone": "Europe/Stockholm"
+        }
+      ]
+    },
+    {
+      "code": "NO",
+      "name": "Norveç",
+      "flag": "🇳🇴",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "NO_OSL",
+          "name": "Oslo",
+          "lat": 59.9139,
+          "lon": 10.7522,
+          "timezone": "Europe/Oslo"
+        },
+        {
+          "id": "NO_BGO",
+          "name": "Bergen",
+          "lat": 60.3913,
+          "lon": 5.3221,
+          "timezone": "Europe/Oslo"
+        }
+      ]
+    },
+    {
+      "code": "DK",
+      "name": "Danimarka",
+      "flag": "🇩🇰",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "DK_CPH",
+          "name": "Kopenhag",
+          "lat": 55.6761,
+          "lon": 12.5683,
+          "timezone": "Europe/Copenhagen"
+        },
+        {
+          "id": "DK_AAL",
+          "name": "Aarhus",
+          "lat": 56.1629,
+          "lon": 10.2039,
+          "timezone": "Europe/Copenhagen"
+        }
+      ]
+    },
+    {
+      "code": "RU",
+      "name": "Rusya",
+      "flag": "🇷🇺",
+      "method": 14,
+      "school": 0,
+      "cities": [
+        {
+          "id": "RU_MOW",
+          "name": "Moskova",
+          "lat": 55.7558,
+          "lon": 37.6173,
+          "timezone": "Europe/Moscow"
+        },
+        {
+          "id": "RU_LED",
+          "name": "St. Petersburg",
+          "lat": 59.9343,
+          "lon": 30.3351,
+          "timezone": "Europe/Moscow"
+        },
+        {
+          "id": "RU_KZN",
+          "name": "Kazan",
+          "lat": 55.8304,
+          "lon": 49.0661,
+          "timezone": "Europe/Moscow"
+        },
+        {
+          "id": "RU_UFA",
+          "name": "Ufa",
+          "lat": 54.7388,
+          "lon": 55.9721,
+          "timezone": "Asia/Yekaterinburg"
+        },
+        {
+          "id": "RU_GRO",
+          "name": "Grozni",
+          "lat": 43.3167,
+          "lon": 45.6985,
+          "timezone": "Europe/Moscow"
+        },
+        {
+          "id": "RU_MHX",
+          "name": "Mahackhala",
+          "lat": 42.9849,
+          "lon": 47.5047,
+          "timezone": "Europe/Moscow"
+        }
+      ]
+    },
+    {
+      "code": "AZ",
+      "name": "Azerbaycan",
+      "flag": "🇦🇿",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "AZ_BAK",
+          "name": "Bakü",
+          "lat": 40.4093,
+          "lon": 49.8671,
+          "timezone": "Asia/Baku"
+        },
+        {
+          "id": "AZ_GNJ",
+          "name": "Gence",
+          "lat": 40.6857,
+          "lon": 46.3606,
+          "timezone": "Asia/Baku"
+        }
+      ]
+    },
+    {
+      "code": "KZ",
+      "name": "Kazakistan",
+      "flag": "🇰🇿",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "KZ_ALA",
+          "name": "Almatı",
+          "lat": 43.222,
+          "lon": 76.8512,
+          "timezone": "Asia/Almaty"
+        },
+        {
+          "id": "KZ_NQZ",
+          "name": "Astana",
+          "lat": 51.1801,
+          "lon": 71.446,
+          "timezone": "Asia/Almaty"
+        },
+        {
+          "id": "KZ_CIT",
+          "name": "Şımkent",
+          "lat": 42.3,
+          "lon": 69.6,
+          "timezone": "Asia/Almaty"
+        }
+      ]
+    },
+    {
+      "code": "UZ",
+      "name": "Özbekistan",
+      "flag": "🇺🇿",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "UZ_TAS",
+          "name": "Taşkent",
+          "lat": 41.2995,
+          "lon": 69.2401,
+          "timezone": "Asia/Tashkent"
+        },
+        {
+          "id": "UZ_SKD",
+          "name": "Semerkant",
+          "lat": 39.6542,
+          "lon": 66.9597,
+          "timezone": "Asia/Samarkand"
+        },
+        {
+          "id": "UZ_BHK",
+          "name": "Buhara",
+          "lat": 39.7747,
+          "lon": 64.4286,
+          "timezone": "Asia/Samarkand"
+        },
+        {
+          "id": "UZ_FEG",
+          "name": "Fergana",
+          "lat": 40.3864,
+          "lon": 71.7864,
+          "timezone": "Asia/Tashkent"
+        }
+      ]
+    },
+    {
+      "code": "KG",
+      "name": "Kırgızistan",
+      "flag": "🇰🇬",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "KG_FRU",
+          "name": "Bişkek",
+          "lat": 42.8746,
+          "lon": 74.5698,
+          "timezone": "Asia/Bishkek"
+        },
+        {
+          "id": "KG_OSH",
+          "name": "Oş",
+          "lat": 40.5283,
+          "lon": 72.7985,
+          "timezone": "Asia/Bishkek"
+        }
+      ]
+    },
+    {
+      "code": "TJ",
+      "name": "Tacikistan",
+      "flag": "🇹🇯",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "TJ_DYU",
+          "name": "Duşanbe",
+          "lat": 38.5598,
+          "lon": 68.7738,
+          "timezone": "Asia/Dushanbe"
+        },
+        {
+          "id": "TJ_KHU",
+          "name": "Hucend",
+          "lat": 40.2806,
+          "lon": 69.6246,
+          "timezone": "Asia/Dushanbe"
+        }
+      ]
+    },
+    {
+      "code": "TM",
+      "name": "Türkmenistan",
+      "flag": "🇹🇲",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "TM_ASB",
+          "name": "Aşkabat",
+          "lat": 37.9601,
+          "lon": 58.3261,
+          "timezone": "Asia/Ashgabat"
+        },
+        {
+          "id": "TM_TUR",
+          "name": "Türkmenabat",
+          "lat": 39.1017,
+          "lon": 63.5735,
+          "timezone": "Asia/Ashgabat"
+        }
+      ]
+    },
+    {
+      "code": "BA",
+      "name": "Bosna-Hersek",
+      "flag": "🇧🇦",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "BA_SJJ",
+          "name": "Saraybosna",
+          "lat": 43.8563,
+          "lon": 18.4131,
+          "timezone": "Europe/Sarajevo"
+        },
+        {
+          "id": "BA_BNX",
+          "name": "Banja Luka",
+          "lat": 44.7722,
+          "lon": 17.191,
+          "timezone": "Europe/Sarajevo"
+        }
+      ]
+    },
+    {
+      "code": "AL",
+      "name": "Arnavutluk",
+      "flag": "🇦🇱",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "AL_TIA",
+          "name": "Tiran",
+          "lat": 41.3275,
+          "lon": 19.8187,
+          "timezone": "Europe/Tirane"
+        },
+        {
+          "id": "AL_SHK",
+          "name": "Shkodra",
+          "lat": 42.0683,
+          "lon": 19.5126,
+          "timezone": "Europe/Tirane"
+        }
+      ]
+    },
+    {
+      "code": "MK",
+      "name": "Kuzey Makedonya",
+      "flag": "🇲🇰",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "MK_SKP",
+          "name": "Üsküp",
+          "lat": 41.9981,
+          "lon": 21.4254,
+          "timezone": "Europe/Skopje"
+        },
+        {
+          "id": "MK_TET",
+          "name": "Tetova",
+          "lat": 41.9997,
+          "lon": 20.9714,
+          "timezone": "Europe/Skopje"
+        }
+      ]
+    },
+    {
+      "code": "XK",
+      "name": "Kosova",
+      "flag": "🇽🇰",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "XK_PRN",
+          "name": "Priştine",
+          "lat": 42.6629,
+          "lon": 21.1655,
+          "timezone": "Europe/Belgrade"
+        },
+        {
+          "id": "XK_PEJ",
+          "name": "Peja",
+          "lat": 42.66,
+          "lon": 20.29,
+          "timezone": "Europe/Belgrade"
+        }
+      ]
+    },
+    {
+      "code": "PL",
+      "name": "Polonya",
+      "flag": "🇵🇱",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "PL_WAW",
+          "name": "Varşova",
+          "lat": 52.2297,
+          "lon": 21.0122,
+          "timezone": "Europe/Warsaw"
+        },
+        {
+          "id": "PL_KRK",
+          "name": "Krakow",
+          "lat": 50.0647,
+          "lon": 19.945,
+          "timezone": "Europe/Warsaw"
+        }
+      ]
+    },
+    {
+      "code": "US",
+      "name": "Amerika Birleşik Devletleri",
+      "flag": "🇺🇸",
+      "method": 2,
+      "school": 1,
+      "cities": [
+        {
+          "id": "US_NYC",
+          "name": "New York",
+          "lat": 40.7128,
+          "lon": -74.006,
+          "timezone": "America/New_York"
+        },
+        {
+          "id": "US_LAX",
+          "name": "Los Angeles",
+          "lat": 34.0522,
+          "lon": -118.2437,
+          "timezone": "America/Los_Angeles"
+        },
+        {
+          "id": "US_CHI",
+          "name": "Chicago",
+          "lat": 41.8781,
+          "lon": -87.6298,
+          "timezone": "America/Chicago"
+        },
+        {
+          "id": "US_HOU",
+          "name": "Houston",
+          "lat": 29.7604,
+          "lon": -95.3698,
+          "timezone": "America/Chicago"
+        },
+        {
+          "id": "US_DTW",
+          "name": "Detroit",
+          "lat": 42.3314,
+          "lon": -83.0458,
+          "timezone": "America/Detroit"
+        },
+        {
+          "id": "US_DBN",
+          "name": "Dearborn",
+          "lat": 42.3223,
+          "lon": -83.1763,
+          "timezone": "America/Detroit"
+        },
+        {
+          "id": "US_WDC",
+          "name": "Washington D.C.",
+          "lat": 38.9072,
+          "lon": -77.0369,
+          "timezone": "America/New_York"
+        },
+        {
+          "id": "US_PHX",
+          "name": "Phoenix",
+          "lat": 33.4484,
+          "lon": -112.074,
+          "timezone": "America/Phoenix"
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "Kanada",
+      "flag": "🇨🇦",
+      "method": 2,
+      "school": 1,
+      "cities": [
+        {
+          "id": "CA_TOR",
+          "name": "Toronto",
+          "lat": 43.6532,
+          "lon": -79.3832,
+          "timezone": "America/Toronto"
+        },
+        {
+          "id": "CA_MTL",
+          "name": "Montreal",
+          "lat": 45.5017,
+          "lon": -73.5673,
+          "timezone": "America/Toronto"
+        },
+        {
+          "id": "CA_VAN",
+          "name": "Vancouver",
+          "lat": 49.2827,
+          "lon": -123.1207,
+          "timezone": "America/Vancouver"
+        },
+        {
+          "id": "CA_CGY",
+          "name": "Calgary",
+          "lat": 51.0447,
+          "lon": -114.0719,
+          "timezone": "America/Edmonton"
+        },
+        {
+          "id": "CA_OTT",
+          "name": "Ottawa",
+          "lat": 45.4215,
+          "lon": -75.6972,
+          "timezone": "America/Toronto"
+        }
+      ]
+    },
+    {
+      "code": "AU",
+      "name": "Avustralya",
+      "flag": "🇦🇺",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "AU_SYD",
+          "name": "Sydney",
+          "lat": -33.8688,
+          "lon": 151.2093,
+          "timezone": "Australia/Sydney"
+        },
+        {
+          "id": "AU_MEL",
+          "name": "Melbourne",
+          "lat": -37.8136,
+          "lon": 144.9631,
+          "timezone": "Australia/Melbourne"
+        },
+        {
+          "id": "AU_BNE",
+          "name": "Brisbane",
+          "lat": -27.4698,
+          "lon": 153.0251,
+          "timezone": "Australia/Brisbane"
+        },
+        {
+          "id": "AU_PER",
+          "name": "Perth",
+          "lat": -31.9505,
+          "lon": 115.8605,
+          "timezone": "Australia/Perth"
+        },
+        {
+          "id": "AU_ADL",
+          "name": "Adelaide",
+          "lat": -34.9285,
+          "lon": 138.6007,
+          "timezone": "Australia/Adelaide"
+        }
+      ]
+    },
+    {
+      "code": "NZ",
+      "name": "Yeni Zelanda",
+      "flag": "🇳🇿",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "NZ_AKL",
+          "name": "Auckland",
+          "lat": -36.8485,
+          "lon": 174.7633,
+          "timezone": "Pacific/Auckland"
+        },
+        {
+          "id": "NZ_WLG",
+          "name": "Wellington",
+          "lat": -41.2866,
+          "lon": 174.7756,
+          "timezone": "Pacific/Auckland"
+        }
+      ]
+    },
+    {
+      "code": "BR",
+      "name": "Brezilya",
+      "flag": "🇧🇷",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "BR_SAO",
+          "name": "São Paulo",
+          "lat": -23.5505,
+          "lon": -46.6333,
+          "timezone": "America/Sao_Paulo"
+        },
+        {
+          "id": "BR_RIO",
+          "name": "Rio de Janeiro",
+          "lat": -22.9068,
+          "lon": -43.1729,
+          "timezone": "America/Sao_Paulo"
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Arjantin",
+      "flag": "🇦🇷",
+      "method": 3,
+      "school": 1,
+      "cities": [
+        {
+          "id": "AR_BUE",
+          "name": "Buenos Aires",
+          "lat": -34.6037,
+          "lon": -58.3816,
+          "timezone": "America/Argentina/Buenos_Aires"
+        },
+        {
+          "id": "AR_COR",
+          "name": "Cordoba",
+          "lat": -31.4201,
+          "lon": -64.1888,
+          "timezone": "America/Argentina/Cordoba"
+        }
+      ]
+    },
+    {
+      "code": "CN",
+      "name": "Çin",
+      "flag": "🇨🇳",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "CN_URC",
+          "name": "Urumqi",
+          "lat": 43.8256,
+          "lon": 87.6168,
+          "timezone": "Asia/Urumqi"
+        },
+        {
+          "id": "CN_XIN",
+          "name": "Xining",
+          "lat": 36.6167,
+          "lon": 101.7667,
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "id": "CN_KSG",
+          "name": "Kaşgar",
+          "lat": 39.47,
+          "lon": 75.99,
+          "timezone": "Asia/Urumqi"
+        }
+      ]
+    },
+    {
+      "code": "JP",
+      "name": "Japonya",
+      "flag": "🇯🇵",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "JP_TYO",
+          "name": "Tokyo",
+          "lat": 35.6762,
+          "lon": 139.6503,
+          "timezone": "Asia/Tokyo"
+        },
+        {
+          "id": "JP_OSA",
+          "name": "Osaka",
+          "lat": 34.6937,
+          "lon": 135.5023,
+          "timezone": "Asia/Tokyo"
+        }
+      ]
+    },
+    {
+      "code": "KR",
+      "name": "Güney Kore",
+      "flag": "🇰🇷",
+      "method": 3,
+      "school": 0,
+      "cities": [
+        {
+          "id": "KR_SEL",
+          "name": "Seul",
+          "lat": 37.5665,
+          "lon": 126.978,
+          "timezone": "Asia/Seoul"
+        },
+        {
+          "id": "KR_BUS",
+          "name": "Busan",
+          "lat": 35.1796,
+          "lon": 129.0756,
+          "timezone": "Asia/Seoul"
+        }
+      ]
+    }
+  ]
+}

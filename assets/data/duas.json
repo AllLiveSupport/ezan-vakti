@@ -1,0 +1,1324 @@
+{
+  "categories": [
+    {
+      "id": "morning",
+      "title": "Sabah Duaları",
+      "title_en": "Morning Supplications",
+      "icon": "sunrise",
+      "description": "Güne Allah'ın adıyla başlamak için sabah duaları.",
+      "duas": [
+        {
+          "id": "m1",
+          "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+          "turkish": "Kovulmuş şeytandan Allah'a sığınırım.",
+          "transliteration": "Eûzü billâhi mineş-şeytânirracîm",
+          "source": "Kur'an-ı Kerim",
+          "category": "morning"
+        },
+        {
+          "id": "m2",
+          "arabic": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+          "turkish": "Rahmân ve Rahîm olan Allah'ın adıyla.",
+          "transliteration": "Bismillâhirrahmânirrahîm",
+          "source": "Fâtiha Suresi, 1",
+          "category": "morning"
+        },
+        {
+          "id": "m3",
+          "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+          "turkish": "Bizi öldürdükten (uykudan) sonra dirilten Allah’a hamdolsun. Dönüş yalnız O’nadır.",
+          "transliteration": "Elhamdü lillâhillezî ahyânâ ba'de mâ emâtenâ ve ileyhin-nüşûr",
+          "source": "Buhârî",
+          "category": "morning"
+        },
+        {
+          "id": "m4",
+          "arabic": "اللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ",
+          "turkish": "Allah'ım! Seninle sabahladık, Seninle akşamladık, Seninle yaşıyoruz, Seninle ölüyoruz. Dönüş yalnız Sanadır.",
+          "transliteration": "Allâhümme bike asbahnâ ve bike emseynâ ve bike nahyâ ve bike nemûtü ve ileyken-nüşûr",
+          "source": "Tirmizî",
+          "category": "morning"
+        },
+        {
+          "id": "m5",
+          "arabic": "اللَّهُمَّ عَافِنِي فِي بَدَنِي اللَّهُمَّ عَافِنِي فِي سَمْعِي اللَّهُمَّ عَافِنِي فِي بَصَرِي لَا إِلَهَ إِلَّا أَنْتَ",
+          "turkish": "Allah'ım! Bedenimde afiyet ver. Allah'ım! Kulağıma afiyet ver. Allah'ım! Görmemde afiyet ver. Senden başka ilah yoktur.",
+          "transliteration": "Allâhümme âfinî fî bedenî, Allâhümme âfinî fî sem'î, Allâhümme âfinî fî basarî, lâ ilâhe illâ ente",
+          "source": "Ebû Dâvud",
+          "category": "morning"
+        },
+        {
+          "id": "m6",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا الْيَوْمِ فَتْحَهُ وَنَصْرَهُ وَنُورَهُ وَبَرَكَتَهُ وَهُدَاهُ",
+          "turkish": "Allah'ım! Bu günün hayrını, fethini, yardımını, nurunu, bereketini ve hidayetini senden isterim.",
+          "transliteration": "Allâhümme innî es'elüke hayra hâzel-yevmi fethahu ve nasrahu ve nûrahu ve berakatehu ve hüdâhu",
+          "source": "Ebû Dâvud",
+          "category": "morning"
+        },
+        {
+          "id": "m7",
+          "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
+          "turkish": "Allah'ı hamd ile tesbih ederim.",
+          "transliteration": "Sübhânallâhi ve bi-hamdihî",
+          "source": "Buhârî",
+          "category": "morning"
+        },
+        {
+          "id": "m8",
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ لَا إِلَهَ إِلَّا أَنْتَ",
+          "turkish": "Allah'ım! Küfürden ve fakirlikten sana sığınırım. Kabir azabından da sana sığınırım. Senden başka ilah yoktur.",
+          "transliteration": "Allâhümme innî eûzü bike minel-küfri vel-fakri ve eûzü bike min azâbil-kabr, lâ ilâhe illâ ente",
+          "source": "Nesâî",
+          "category": "morning"
+        }
+      ]
+    },
+    {
+      "id": "evening",
+      "title": "Akşam Duaları",
+      "title_en": "Evening Supplications",
+      "icon": "sunset",
+      "description": "Günün sona ermesiyle okunan akşam duaları.",
+      "duas": [
+        {
+          "id": "e1",
+          "arabic": "اللَّهُمَّ بِكَ أَمْسَيْنَا وَبِكَ أَصْبَحْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ الْمَصِيرُ",
+          "turkish": "Allah'ım! Senin lütfunla akşamladık, Senin lütfunla sabahladık, Seninle yaşıyor ve Seninle ölüyoruz. Dönüş Sanadır.",
+          "transliteration": "Allâhümme bike emseynâ ve bike asbahnâ ve bike nahyâ ve bike nemûtü ve ileykel-mesîr",
+          "source": "Ebû Dâvud",
+          "category": "evening"
+        },
+        {
+          "id": "e2",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذِهِ اللَّيْلَةِ وَخَيْرَ مَا فِيهَا وَخَيْرَ مَا بَعْدَهَا",
+          "turkish": "Allah'ım! Bu gecenin hayrını, içinde olanların hayrını ve bundan sonrakilerin hayrını senden isterim.",
+          "transliteration": "Allâhümme innî es'elüke hayra hâzihil-leyleti ve hayra mâ fîhâ ve hayra mâ ba'dehâ",
+          "source": "Müslim",
+          "category": "evening"
+        },
+        {
+          "id": "e3",
+          "arabic": "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ وَالْحَمْدُ لِلَّهِ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+          "turkish": "Akşamladık, mülk Allah'ındır. Hamd Allah'a mahsustur. Allah'tan başka ilah yoktur; O tektir, ortağı yoktur. Mülk O'nundur, hamd O'nadır. O her şeye kadirdir.",
+          "transliteration": "Emseynâ ve emsel-mülkü lillâhi vel-hamdü lillâhi lâ ilâhe illallâhü vahdehû lâ şerîke leh, lehül-mülkü ve lehül-hamdü ve hüve alâ külli şey'in kadîr",
+          "source": "Müslim",
+          "category": "evening"
+        },
+        {
+          "id": "e4",
+          "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+          "turkish": "İsmiyle beraber yerde ve gökte hiçbir şeyin zarar veremeyeceği Allah'ın adıyla. O hakkıyla işitendir, hakkıyla bilendir.",
+          "transliteration": "Bismillâhillezî lâ yedurru me'asmihî şey'ün fil-ardı velâ fis-semâi ve hüves-semî'ul-alîm",
+          "source": "Ebû Dâvud",
+          "category": "evening"
+        },
+        {
+          "id": "e5",
+          "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+          "turkish": "Yarattığı şeylerin şerrinden Allah'ın kusursuz kelimelerine sığınırım.",
+          "transliteration": "Eûzü bi-kelimâtillâhit-tâmmâti min şerri mâ halak",
+          "source": "Müslim",
+          "category": "evening"
+        },
+        {
+          "id": "e6",
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكَسَلِ وَالْهَرَمِ وَالْمَغْرَمِ وَالْمَأْثَمِ",
+          "turkish": "Allah'ım! Tembellikten, ihtiyarlıktan, borçtan ve günahtan sana sığınırım.",
+          "transliteration": "Allâhümme innî eûzü bike minel-keseli vel-heremi vel-mağrami vel-me'sem",
+          "source": "Buhârî",
+          "category": "evening"
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "title": "Uyku Duaları",
+      "title_en": "Before Sleep",
+      "icon": "moon",
+      "description": "Uyumadan önce okunan sureler ve dualar.",
+      "duas": [
+        {
+          "id": "s1",
+          "arabic": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+          "turkish": "Allah'ım, senin adınla ölür (uyur) ve senin adınla dirilirim (uyanırım).",
+          "transliteration": "Bismike Allâhümme emûtü ve ahyâ",
+          "source": "Buhârî",
+          "category": "sleep"
+        },
+        {
+          "id": "s2",
+          "arabic": "اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ",
+          "turkish": "Allah'ım! Kullarını dirilteceğin gün beni azabından koru.",
+          "transliteration": "Allâhümme kınî azâbeke yevme teb'asü ibâdek",
+          "source": "Ebû Dâvud",
+          "category": "sleep"
+        },
+        {
+          "id": "s3",
+          "arabic": "اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ وَفَوَّضْتُ أَمْرِي إِلَيْكَ وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ رَهْبَةً وَرَغْبَةً إِلَيْكَ لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ",
+          "turkish": "Allah'ım! Kendimi sana teslim ettim, işimi sana havale ettim, sana güvenip dayandım; senden korkarak ve sana rağbet ederek. Senden başka sığınacak ve kurtaracak yer yoktur. İndirdiğin kitaba ve gönderdiğin peygambere iman ettim.",
+          "transliteration": "Allâhümme eslemtü nefsî ileyke ve fevvadtu emrî ileyke ve elce'tü zahrî ileyke rahbeten ve rağbeten ileyk. Lâ melcee velâ mencâ minke illâ ileyk, âmentü bi-kitâbikellezî enzelte, ve bi-nebiyyikellezî erselte",
+          "source": "Buhârî",
+          "category": "sleep"
+        },
+        {
+          "id": "s4",
+          "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ",
+          "turkish": "Allah'ım! Seni hamd ile tesbih ederim. Senden başka ilah olmadığına şehadet ederim. Senden bağışlanma diler ve sana tövbe ederim.",
+          "transliteration": "Sübhânekallâhümme ve bi-hamdike eşhedü enlâ ilâhe illâ ente estağfiruke ve etûbü ileyke",
+          "source": "Tirmizî",
+          "category": "sleep"
+        },
+        {
+          "id": "s5",
+          "arabic": "اللَّهُمَّ رَبَّ السَّمَاوَاتِ وَرَبَّ الْأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ فَالِقَ الْحَبِّ وَالنَّوَى وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ وَالْفُرْقَانِ أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ اللَّهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ",
+          "turkish": "Allah'ım! Göklerin Rabbi, yerin Rabbi, büyük Arş'ın Rabbi; bizim Rabbimiz ve her şeyin Rabbisin. Tohumu ve çekirdeği çatlatan, Tevrat'ı, İncil'i ve Furkan'ı indirensin. Perçeminden tuttuğun her şeyin şerrinden sana sığınırım. Allah'ım! Sen ilksin, senden önce hiçbir şey yoktur. Sen sonsun, senden sonra hiçbir şey yoktur. Sen zâhirsin, senin üstünde hiçbir şey yoktur. Sen bâtınsın, senden öte hiçbir şey yoktur. Bizim borcumuzu öde ve bizi fakirlikten kurtar.",
+          "transliteration": "Allâhümme Rabbes-semâvâti ve Rabbel-ardı ve Rabbel-arşil-azîm, Rabbenâ ve Rabbe külli şey'in, fâlikal-habbi ven-nevâ ve münzilet-Tevrâti vel-İncîli vel-Furkân. Eûzü bike min şerri külli şey'in ente âhızun binâsiyetih. Allâhümme entel-evvelü fe-leyse kableke şey' ve entel-âhiru fe-leyse ba'deke şey' ve entez-zâhiru fe-leyse fevkake şey' ve entel-bâtınü fe-leyse dûneke şey'. İkdı anned-deyne ve ağninâ minel-fakr",
+          "source": "Müslim",
+          "category": "sleep"
+        },
+        {
+          "id": "s6",
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الشَّيْطَانِ وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا",
+          "turkish": "Allah'ım! Şeytandan ve perçeminden tuttuğun her canlının şerrinden sana sığınırım.",
+          "transliteration": "Allâhümme innî eûzü bike mineş-şeytâni ve min şerri külli dâbbetin ente âhızun binâsiyetihâ",
+          "source": "Ebû Dâvud",
+          "category": "sleep"
+        }
+      ]
+    },
+    {
+      "id": "after_prayer",
+      "title": "Namaz Sonrası",
+      "title_en": "After Prayer",
+      "icon": "mosque",
+      "description": "Farz namazların ardından okunması tavsiye edilen zikir ve dualar.",
+      "duas": [
+        {
+          "id": "ap1",
+          "arabic": "سُبْحَانَ اللَّهِ",
+          "turkish": "Allah'ı tüm noksanlıklardan tenzih ederim.",
+          "transliteration": "Sübhânallah",
+          "source": "Müslim",
+          "category": "after_prayer"
+        },
+        {
+          "id": "ap2",
+          "arabic": "الْحَمْدُ لِلَّهِ",
+          "turkish": "Hamd Allah'a mahsustur.",
+          "transliteration": "Elhamdülillâh",
+          "source": "Müslim",
+          "category": "after_prayer"
+        },
+        {
+          "id": "ap3",
+          "arabic": "اللَّهُ أَكْبَرُ",
+          "turkish": "Allah en büyüktür.",
+          "transliteration": "Allâhü ekber",
+          "source": "Müslim",
+          "category": "after_prayer"
+        },
+        {
+          "id": "ap4",
+          "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+          "turkish": "Allah'tan başka ilah yoktur. O tektir, ortağı yoktur. Mülk O'nundur, hamd O'nadır. O her şeye kadirdir.",
+          "transliteration": "Lâ ilâhe illallâhü vahdehû lâ şerîke leh, lehül-mülkü ve lehül-hamdü ve hüve alâ külli şey'in kadîr",
+          "source": "Müslim",
+          "category": "after_prayer"
+        },
+        {
+          "id": "ap5",
+          "arabic": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+          "turkish": "Allah'ım! Seni zikretmem, sana şükretmem ve sana güzel ibadet etmem konusunda bana yardım et.",
+          "transliteration": "Allâhümme e'innî alâ zikrike ve şükrike ve husni ibâdetik",
+          "source": "Ebû Dâvud",
+          "category": "after_prayer"
+        },
+        {
+          "id": "ap6",
+          "arabic": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ",
+          "turkish": "Allah'ım! Öne aldığım ve ertelediğim, gizlediğim ve açığa vurduğum günahlarımı bağışla.",
+          "transliteration": "Allâhümmeğfir lî mâ kaddemtü ve mâ ahhartü ve mâ esrartü ve mâ a'lentü",
+          "source": "Müslim",
+          "category": "after_prayer"
+        },
+        {
+          "id": "ap7",
+          "arabic": "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ",
+          "turkish": "Rabbim! Hesap gününde beni, anne-babamı ve tüm müminleri bağışla.",
+          "transliteration": "Rabbigfir lî ve li-vâlideyye ve lil-mü'minîne yevme yekûmül-hisâb",
+          "source": "İbrâhim Suresi, 41",
+          "category": "after_prayer"
+        },
+        {
+          "id": "ap8",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا",
+          "turkish": "Allah'ım! Senden faydalı ilim, temiz rızık ve kabul edilmiş amel istiyorum.",
+          "transliteration": "Allâhümme innî es'elüke ilmen nâfian ve rizkan tayyiben ve amelen mütekabbelâ",
+          "source": "İbn Mâce",
+          "category": "after_prayer"
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "title": "Yolculuk Duaları",
+      "title_en": "Travel Supplications",
+      "icon": "airplane",
+      "description": "Yolculuğa çıkarken ve seyahat esnasında okunan dualar.",
+      "duas": [
+        {
+          "id": "t1",
+          "arabic": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
+          "turkish": "Bunu bizim hizmetimize veren Allah'ı noksan sıfatlardan tenzih ederiz. Yoksa bizim buna gücümüz yetmezdi. Şüphesiz biz Rabbimize döneceğiz.",
+          "transliteration": "Sübhânellezî sehhara lenâ hâzâ ve mâ künnâ lehû mukrinîn. Ve innâ ilâ Rabbinâ lemünkalibûn",
+          "source": "Zuhruf Suresi, 13-14",
+          "category": "travel"
+        },
+        {
+          "id": "t2",
+          "arabic": "اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا الْبِرَّ وَالتَّقْوَى وَمِنَ الْعَمَلِ مَا تَرْضَى",
+          "turkish": "Allah'ım! Bu yolculuğumuzda senden iyilik, takva ve razı olduğun ameli istiyoruz.",
+          "transliteration": "Allâhümme innâ nes'elüke fî seferinâ hâzel-birra vet-takvâ ve minel-ameli mâ terdâ",
+          "source": "Müslim",
+          "category": "travel"
+        },
+        {
+          "id": "t3",
+          "arabic": "اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ وَالْخَلِيفَةُ فِي الْأَهْلِ",
+          "turkish": "Allah'ım! Sen yolculuktaki yoldaşımız, geride bıraktıklarımızın da vekilisin.",
+          "transliteration": "Allâhümme ente's-sâhibü fis-seferi vel-halîfetü fil-ehl",
+          "source": "Müslim",
+          "category": "travel"
+        },
+        {
+          "id": "t4",
+          "arabic": "اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا وَاطْوِ عَنَّا بُعْدَهُ",
+          "turkish": "Allah'ım! Bu yolculuğumuzu bize kolaylaştır ve uzaklığını kısalt.",
+          "transliteration": "Allâhümme hevvin aleynâ seferanâ hâzâ vatvi annâ bu'deh",
+          "source": "Müslim",
+          "category": "travel"
+        },
+        {
+          "id": "t5",
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ وَكَآبَةِ الْمَنْظَرِ وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالْأَهْلِ",
+          "turkish": "Allah'ım! Yolculuğun meşakkatinden, kötü manzaradan, mal ve aileye kötü bir halde dönmekten sana sığınırım.",
+          "transliteration": "Allâhümme innî eûzü bike min va'sâis-seferi ve keâbetil-menzari ve sûil-munkalebi fil-mâli vel-ehl",
+          "source": "Buhârî",
+          "category": "travel"
+        }
+      ]
+    },
+    {
+      "id": "relief",
+      "title": "Sıkıntı ve Üzüntüde",
+      "title_en": "Relief & Peace",
+      "icon": "heart",
+      "description": "Dua ve sıkıntı anlarında okunacak dualar.",
+      "duas": [
+        {
+          "id": "r1",
+          "arabic": "لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+          "turkish": "Senden başka ilah yoktur. Seni noksan sıfatlardan tenzih ederim. Şüphesiz ben zalimlerden oldum.",
+          "transliteration": "Lâ ilâhe illâ ente sübhâneke innî küntü minez-zâlimîn",
+          "source": "Enbiyâ Suresi, 87",
+          "category": "relief"
+        },
+        {
+          "id": "r2",
+          "arabic": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
+          "turkish": "Allah bize yeter; O ne güzel vekildir.",
+          "transliteration": "Hasbünallâhü ve ni'mel vekîl",
+          "source": "Âl-i İmrân Suresi, 173",
+          "category": "relief"
+        },
+        {
+          "id": "r3",
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَالْعَجْزِ وَالْكَسَلِ وَالْبُخْلِ وَالْجُبْنِ وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ",
+          "turkish": "Allah'ım! Sıkıntı ve hüzünden, acizlik ve tembellikten, cimrilik ve korkaklıktan, borç yükünden ve insanların kahrından sana sığınırım.",
+          "transliteration": "Allâhümme innî eûzü bike minel-hemmi vel-hazen, vel-aczü vel-kesel, vel-buhl vel-cübn, ve dalei'd-deyn ve galebeti'r-ricâl",
+          "source": "Buhârî",
+          "category": "relief"
+        },
+        {
+          "id": "r4",
+          "arabic": "أَنِّي مَسَّنِيَ الضُّرُّ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ",
+          "turkish": "(Rabbim!) Bana zarar dokundu, sen merhametlilerin en merhametlisisin.",
+          "transliteration": "Ennî messeniye'd-durru ve ente erhamü'r-râhimîn",
+          "source": "Enbiyâ Suresi, 83",
+          "category": "relief"
+        },
+        {
+          "id": "r5",
+          "arabic": "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ",
+          "turkish": "Ey Hayy, ey Kayyûm! Rahmetinle senden yardım diliyorum. Benim bütün işlerimi düzelt ve beni göz açıp kapayacak kadar bir süre bile olsa nefsime bırakma.",
+          "transliteration": "Yâ Hayyü yâ Kayyûmü bi-rahmetike esteğîs, aslih lî şe'nî küllehû velâ tekilnî ilâ nefsî tarfete ayn",
+          "source": "Tirmizî",
+          "category": "relief"
+        },
+        {
+          "id": "r6",
+          "arabic": "رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا",
+          "turkish": "Rabbimiz! Unuttuklarımızdan veya yanıldıklarımızdan dolayı bizi sorumlu tutma.",
+          "transliteration": "Rabbenâ lâ tüâhıznâ in nesînâ ev ahta'nâ",
+          "source": "Bakara Suresi, 286",
+          "category": "relief"
+        },
+        {
+          "id": "r7",
+          "arabic": "اللَّهُمَّ إِنِّي عَبْدُكَ وَابْنُ عَبْدِكَ وَابْنُ أَمَتِكَ نَاصِيَتِي بِيَدِكَ مَاضٍ فِيَّ حُكْمُكَ عَدْلٌ فِيَّ قَضَاؤُكَ أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ أَوْ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي وَنُورَ صَدْرِي وَجَلَاءَ حُزْنِي وَذَهَابَ هَمِّي",
+          "turkish": "Allah'ım! Ben senin kulunum, erkek kulunun ve kadın kulunun oğluyum. Perçemim senin elindedir. Hakkımda verdiğin hüküm geçerlidir, kararın adalettir. Kendini isimlendirdiğin, kitabında indirdiğin, yarattıklarından birine öğrettiğin veya katındaki gayb ilminde kendine has kıldığın sana ait her isimle senden isterim ki; Kur'an'ı kalbimin baharı, göğsümün nuru, hüznümün cilası ve sıkıntımın gidişi kıl.",
+          "transliteration": "Allâhümme innî abdüke vebnü abdike vebnü emetike nâsiyetî bi-yedike mâdın fiyye hukmüke adlün fiyye kadâük. Es'elüke bi-külli ismin hüve leke semmeyte bihî nefseke ev enzeltehû fî kitâbike ev allemtehû ehaden min halkıke ev iste'serte bihî fî ilmil-gaybi indeke en tec'alel-kur'âne rabîa kalbî ve nûra sadrî ve celâe huznî ve zehâbe hemmî",
+          "source": "Ahmed b. Hanbel",
+          "category": "relief"
+        }
+      ]
+    },
+    {
+      "id": "noon",
+      "title": "Öğle Duaları",
+      "title_en": "Noon Supplications",
+      "icon": "noon",
+      "description": "Öğle namazı öncesi ve sonrası okunan dualar.",
+      "duas": [
+        {
+          "id": "n1",
+          "arabic": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+          "turkish": "Allah'ım! Sen selamsın, selamet sendendir. Ey celâl ve ikram sahibi, sen mübareksin.",
+          "transliteration": "Allâhümme ente's-selâmü ve minke's-selâm tebârekte yâ zel-celâli vel-ikrâm",
+          "source": "Müslim",
+          "category": "noon"
+        },
+        {
+          "id": "n2",
+          "arabic": "سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ",
+          "turkish": "Allah'ı tenzih ederim, hamd Allah'a mahsustur, Allah'tan başka ilah yoktur ve Allah en büyüktür.",
+          "transliteration": "Sübhânallâhi vel-hamdü lillâhi velâ ilâhe illallâhü vallâhü ekber",
+          "source": "Müslim",
+          "category": "noon"
+        },
+        {
+          "id": "n3",
+          "arabic": "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي رَبَّنَا وَتَقَبَّلْ دُعَاءِ",
+          "turkish": "Rabbim! Beni ve soyumdan gelenleri namazı dosdoğru kılanlardan eyle. Rabbimiz, duamı kabul buyur.",
+          "transliteration": "Rabbic'alnî mukîme's-salâti ve min zürriyyetî Rabbenâ ve tekabbel duâî",
+          "source": "İbrâhim Suresi, 40",
+          "category": "noon"
+        },
+        {
+          "id": "n4",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا",
+          "turkish": "Allah'ım! Senden faydalı ilim, temiz rızık ve kabul edilmiş amel istiyorum.",
+          "transliteration": "Allâhümme innî es'elüke ilmen nâfian ve rizkan tayyiben ve amelen mütekabbelâ",
+          "source": "İbn Mâce",
+          "category": "noon"
+        },
+        {
+          "id": "n5",
+          "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+          "turkish": "Rabbimiz! Bize dünyada iyilik ver, ahirette iyilik ver ve bizi cehennem azabından koru.",
+          "transliteration": "Rabbenâ âtinâ fid-dünyâ haseneten ve fil-âhirati haseneten ve kınâ azâben-nâr",
+          "source": "Bakara Suresi, 201",
+          "category": "noon"
+        }
+      ]
+    },
+    {
+      "id": "afternoon",
+      "title": "İkindi Duaları",
+      "title_en": "Afternoon Supplications",
+      "icon": "afternoon",
+      "description": "İkindi namazı vakti okunan dualar.",
+      "duas": [
+        {
+          "id": "aft1",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ",
+          "turkish": "Allah'ım! Dünyada ve ahirette afiyet istiyorum.",
+          "transliteration": "Allâhümme innî es'elükel-âfiyete fid-dünyâ vel-âhirah",
+          "source": "İbn Mâce",
+          "category": "afternoon"
+        },
+        {
+          "id": "aft2",
+          "arabic": "اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَاهْدِنِي وَعَافِنِي وَارْزُقْنِي",
+          "turkish": "Allah'ım! Beni bağışla, bana merhamet et, bana hidayet ver, bana afiyet ver ve beni rızıklandır.",
+          "transliteration": "Allâhümmeğfirlî verhamnî vehdinî ve âfinî verzuknî",
+          "source": "Müslim",
+          "category": "afternoon"
+        },
+        {
+          "id": "aft3",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ حُسْنَ الْخَاتِمَةِ",
+          "turkish": "Allah'ım! Senden güzel bir son (hüsn-ü hatime) istiyorum.",
+          "transliteration": "Allâhümme innî es'elüke hüsnel-hâtimetih",
+          "source": "Genel Dua",
+          "category": "afternoon"
+        },
+        {
+          "id": "aft4",
+          "arabic": "رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",
+          "turkish": "Rabbimiz! Biz kendimize zulmettik. Bizi bağışlamaz ve merhamet etmezsen mutlaka kaybedenlerden oluruz.",
+          "transliteration": "Rabbenâ zalemnâ enfüsenâ ve in lem tağfir lenâ ve terhamnâ lenekûnenne minel-hâsirîn",
+          "source": "A'râf Suresi, 23",
+          "category": "afternoon"
+        }
+      ]
+    },
+    {
+      "id": "night",
+      "title": "Yatsı Duaları",
+      "title_en": "Night Supplications",
+      "icon": "night",
+      "description": "Yatsı namazı sonrası ve gece okunan dualar.",
+      "duas": [
+        {
+          "id": "nt1",
+          "arabic": "اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ وَوَجَّهْتُ وَجْهِي إِلَيْكَ وَفَوَّضْتُ أَمْرِي إِلَيْكَ وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ رَغْبَةً وَرَهْبَةً إِلَيْكَ لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ",
+          "turkish": "Allah'ım! Kendimi sana teslim ettim, yüzümü sana çevirdim, işimi sana havale ettim, sana güvenip dayandım; senden korkarak ve sana rağbet ederek. Senden başka sığınacak ve kurtaracak yer yoktur. İndirdiğin kitaba ve gönderdiğin peygambere iman ettim.",
+          "transliteration": "Allâhümme eslemtü nefsî ileyke ve veccehtü vechî ileyke ve fevvadtu emrî ileyke ve elce'tü zahrî ileyke rahbeten ve rağbeten ileyk. Lâ melcee velâ mencâ minke illâ ileyk, âmentü bi-kitâbikellezî enzelte, ve bi-nebiyyikellezî erselte",
+          "source": "Buhârî",
+          "category": "night"
+        },
+        {
+          "id": "nt2",
+          "arabic": "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ",
+          "turkish": "Allah'ım! Görüneni ve görünmeyeni bilen, gökleri ve yeri yaratan, her şeyin Rabbi ve sahibi! Şehadet ederim ki Senden başka ilah yoktur. Nefsimin ve şeytanın şerrinden Sana sığınırım.",
+          "transliteration": "Allâhumme âlimel-gaybi veş-şehâdeti fâtıras-semâvâti vel-ardı, Rabbe külli şey'in ve melîkehü, eşhedü en lâ ilâhe illâ ente, eûzü bike min şerri nefsî ve min şerriş-şeytâni ve şirkihî",
+          "source": "Ebû Dâvud",
+          "category": "night"
+        },
+        {
+          "id": "nt3",
+          "arabic": "اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي",
+          "turkish": "Allah'ım! Beni önümden, arkamdan, sağımdan, solumdan ve üstümden koru. Altımdan (yere batırılarak) helak edilmekten senin azametine sığınırım.",
+          "transliteration": "Allâhümmahfaznî min beyni yedeyye ve min halfî ve an yemînî ve an şimâlî ve min fevkî ve eûzü bi-azametike en uğtâle min tahtî",
+          "source": "Ebû Dâvud",
+          "category": "night"
+        },
+        {
+          "id": "nt4",
+          "arabic": "اللَّهُمَّ غَارَتِ النُّجُومُ وَهَدَأَتِ الْعُيُونُ وَأَنْتَ حَيٌّ قَيُّومٌ لَا تَأْخُذُكَ سِنَةٌ وَلَا نَوْمٌ يَا حَيُّ يَا قَيُّومُ أَهْدِئْ لَيْلِي وَأَنِمْ عَيْنِي",
+          "turkish": "Allah'ım! Yıldızlar battı, gözler uyudu. Sen ise Hayy ve Kayyûm'sun; uyuklama ve uyku seni tutmaz. Ey Hayy ve Kayyûm olan Allah'ım! Gecemi sakinleştir ve gözümü uyut.",
+          "transliteration": "Allâhumme gârati'n-nucûmu ve hede'eti'l-uyûnu ve ente hayyun kayyûmun lâ te'huzüke sinetün ve lâ nevm. Yâ hayyu yâ kayyûmu ehdi' leylî ve enim aynî",
+          "source": "İbn Ebî Şeybe",
+          "category": "night"
+        },
+        {
+          "id": "nt5",
+          "arabic": "اللَّهُمَّ خَلَقْتَ نَفْسِي وَأَنْتَ تَوَفَّاهَا لَكَ مَمَاتُهَا وَمَحْيَاهَا إِنْ أَحْيَيْتَهَا فَاحْفَظْهَا وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَافِيَةَ",
+          "turkish": "Allah'ım! Nefsimi sen yarattın, onu sen vefat ettirirsin. Ölümü de hayatı da sana aittir. Eğer onu yaşatırsan koru, eğer vefat ettirirsen bağışla. Allah'ım! Senden afiyet dilerim.",
+          "transliteration": "Allâhumme halakte nefsî ve ente teveffâhâ, leke memâtühâ ve mahyâhâ, in ahyeytehâ fahfazhâ ve in emettehâ fağfir lehâ. Allâhumme innî es'elükel-âfiyeh",
+          "source": "Müslim",
+          "category": "night"
+        },
+        {
+          "id": "nt6",
+          "arabic": "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي وَبِكَ أَرْفَعُهُ إِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ",
+          "turkish": "Rabbim! Senin adınla yanımı yatağa koydum ve ancak seninle kaldırırım. Eğer ruhumu alırsan ona merhamet et. Eğer geri gönderirsen, salih kullarını koruduğun gibi onu da koru.",
+          "transliteration": "Bismike Rabbî veda'tu cenbî ve bike erfeuh, in emsekte nefsî ferhamhâ ve in erseltehâ fahfazhâ bimâ tahfazu bihî ibâdekes-sâlihîn",
+          "source": "Buhârî",
+          "category": "night"
+        }
+      ]
+    },
+    {
+      "id": "friday",
+      "title": "Cuma Duaları",
+      "title_en": "Friday Supplications",
+      "icon": "friday",
+      "description": "Mübarek Cuma gününde okunacak dualar ve salavat.",
+      "duas": [
+        {
+          "id": "fr1",
+          "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+          "turkish": "Allah'ım! İbrahim'e ve Âl-i İbrahim'e salât ettiğin gibi Muhammed'e ve Âl-i Muhammed'e de salât et. Şüphesiz sen övülmeye layıksın, şanı yücesin.",
+          "transliteration": "Allâhumme salli alâ Muhammedin ve alâ âli Muhammedin kemâ salleyte alâ İbrâhîme ve alâ âli İbrâhîm, inneke hamîdün mecîd",
+          "source": "Buhârî",
+          "category": "friday"
+        },
+        {
+          "id": "fr2",
+          "arabic": "اللَّهُمَّ إِنَّ هَذَا يَوْمُ الْجُمُعَةِ فَاجْعَلْهُ يَوْمَ خَيْرٍ وَبَرَكَةٍ",
+          "turkish": "Allah'ım! Bu Cuma günüdür, onu bizim için hayır ve bereket günü kıl.",
+          "transliteration": "Allâhumme inne hâzâ yevmu'l-cumu'ati fec'alhü yevme hayrin ve berekeh",
+          "source": "Genel Dua",
+          "category": "friday"
+        },
+        {
+          "id": "fr3",
+          "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ اللَّهُ الصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+          "turkish": "De ki: O Allah birdir. Allah sameddir (her şey O’na muhtaçtır, O hiçbir şeye muhtaç değildir). O doğurmamıştır ve doğurulmamıştır. Hiçbir şey O’nun dengi değildir.",
+          "transliteration": "Kul huvallâhu ehad. Allâhus-samed. Lem yelid ve lem yûled. Ve lem yekun lehû küfüven ehad",
+          "source": "İhlas Suresi",
+          "category": "friday"
+        },
+        {
+          "id": "fr4",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الْحَمْدَ لَا إِلَهَ إِلَّا أَنْتَ الْمَنَّانُ بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ يَا حَيُّ يَا قَيُّومُ",
+          "turkish": "Allah'ım! Senden istiyorum; hamd yalnız sanadır. Senden başka ilah yoktur. Sen Minnettar'sın, gökleri ve yeri yoktan var edensin. Ey celal ve ikram sahibi! Ey Hayy ve Kayyûm!",
+          "transliteration": "Allâhumme innî es'elüke bi-enne leke'l-hamde lâ ilâhe illâ ente'l-mennânü bedîu's-semâvâti ve'l-ard, yâ zel-celâli vel-ikrâm yâ hayyu yâ kayyûm",
+          "source": "Ebû Dâvud",
+          "category": "friday"
+        },
+        {
+          "id": "fr5",
+          "arabic": "اللَّهُمَّ بَارِكْ لَنَا فِي يَوْمِنَا هَذَا وَفِي أَعْمَالِنَا وَفِي أَرْزَاقِنَا وَفِي أَهْلِنَا",
+          "turkish": "Allah'ım! Bu günümüzde, amellerimizde, rızıklarımızda ve ailemizde bize bereket ver.",
+          "transliteration": "Allâhumme bârik lenâ fî yevminâ hâzâ ve fî a'mâlinâ ve fî erzâkınâ ve fî ehlinâ",
+          "source": "Genel Dua",
+          "category": "friday"
+        },
+        {
+          "id": "fr6",
+          "arabic": "اللَّهُمَّ اغْفِرْ لِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَالْمُسْلِمِينَ وَالْمُسْلِمَاتِ",
+          "turkish": "Allah'ım! Mümin erkeklere, mümin kadınlara, Müslüman erkeklere ve Müslüman kadınlara mağfiret et.",
+          "transliteration": "Allâhummağfir lil-mu'minîne ve'l-mu'minâti ve'l-müslimîne ve'l-müslimât",
+          "source": "Müslim",
+          "category": "friday"
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "title": "İftar & Sahur",
+      "title_en": "Iftar & Suhoor",
+      "icon": "food",
+      "description": "İftar açarken ve sahura kalkarken okunan dualar.",
+      "duas": [
+        {
+          "id": "fd1",
+          "arabic": "اللَّهُمَّ لَكَ صُمْتُ وَبِكَ آمَنْتُ وَعَلَيْكَ تَوَكَّلْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ",
+          "turkish": "Allah'ım! Senin için oruç tuttum, sana iman ettim, sana tevekkül ettim ve senin rızkınla orucumu açtım.",
+          "transliteration": "Allâhumme leke sumtu ve bike âmentu ve aleyke tevekkeltu ve alâ rızkıke eftartu",
+          "source": "Ebû Dâvud",
+          "category": "food"
+        },
+        {
+          "id": "fd2",
+          "arabic": "ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ وَثَبَتَ الأَجْرُ إِنْ شَاءَ اللَّهُ",
+          "turkish": "Susuzluk gitti, damarlar ıslandı ve inşallah ecir sabit oldu.",
+          "transliteration": "Zehebe'z-zameu vebtelleti'l-urûku ve sebete'l-ecru inşâallâh",
+          "source": "Ebû Dâvud",
+          "category": "food"
+        },
+        {
+          "id": "fd3",
+          "arabic": "بِسْمِ اللَّهِ وَعَلَى بَرَكَةِ اللَّهِ",
+          "turkish": "Allah'ın adıyla ve Allah'ın bereketi üzere.",
+          "transliteration": "Bismillâhi ve alâ bereketillâh",
+          "source": "Genel Yemek Duası",
+          "category": "food"
+        },
+        {
+          "id": "fd4",
+          "arabic": "اللَّهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ",
+          "turkish": "Allah'ım! Bize rızıklandırdığın şeylerde bereket ver ve bizi cehennem azabından koru.",
+          "transliteration": "Allâhumme bârik lenâ fîmâ razaktanâ ve kınâ azâbe'n-nâr",
+          "source": "Tirmizî",
+          "category": "food"
+        },
+        {
+          "id": "fd5",
+          "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ",
+          "turkish": "Bizi yediren, içiren ve bizi Müslümanlardan kılan Allah'a hamdolsun.",
+          "transliteration": "Elhamdülillâhillezî et'amenâ ve sekânâ ve ce'alenâ müslimîn",
+          "source": "Ebû Dâvud",
+          "category": "food"
+        },
+        {
+          "id": "fd6",
+          "arabic": "اللَّهُمَّ أَطْعِمْ مَنْ أَطْعَمَنِي وَاسْقِ مَنْ سَقَانِي",
+          "turkish": "Allah'ım! Beni yedirene sen de yedir, beni içirene sen de içir.",
+          "transliteration": "Allâhumme at'ım men at'amenî veskı men sekânî",
+          "source": "Müslim",
+          "category": "food"
+        }
+      ]
+    },
+    {
+      "id": "quran",
+      "title": "Kur'an Duaları",
+      "title_en": "Quranic Supplications",
+      "icon": "quran",
+      "description": "Kur'an-ı Kerim'deki seçilmiş dua ayetleri.",
+      "duas": [
+        {
+          "id": "q1",
+          "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+          "turkish": "Rabbimiz! Bize dünyada iyilik ver, ahirette iyilik ver ve bizi cehennem azabından koru.",
+          "transliteration": "Rabbenâ âtinâ fid-dünyâ haseneten ve fil-âhirati haseneten ve kınâ azâben-nâr",
+          "source": "Bakara Suresi, 201",
+          "category": "quran"
+        },
+        {
+          "id": "q2",
+          "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً",
+          "turkish": "Rabbimiz! Bizi hidayete erdirdikten sonra kalplerimizi eğriltme ve bize katından rahmet bağışla.",
+          "transliteration": "Rabbenâ lâ tuziğ kulûbenâ ba'de iz hedeytenâ ve heb lenâ min ledünke rahmeh",
+          "source": "Âl-i İmrân Suresi, 8",
+          "category": "quran"
+        },
+        {
+          "id": "q3",
+          "arabic": "رَبِّ زِدْنِي عِلْمًا",
+          "turkish": "Rabbim! İlmimi artır.",
+          "transliteration": "Rabbi zidnî ilmen",
+          "source": "Taha Suresi, 114",
+          "category": "quran"
+        },
+        {
+          "id": "q4",
+          "arabic": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+          "turkish": "Rabbim! Bana indireceğin her hayra muhtacım.",
+          "transliteration": "Rabbi innî limâ enzelte ileyye min hayrin fakîr",
+          "source": "Kasas Suresi, 24",
+          "category": "quran"
+        },
+        {
+          "id": "q5",
+          "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+          "turkish": "Rabbimiz! Bize eşlerimizden ve neslimizden göz aydınlığı bağışla ve bizi takva sahiplerine önder kıl.",
+          "transliteration": "Rabbenâ heb lenâ min ezvâcinâ ve zürriyyâtinâ kurrate a'yunin vec'alnâ lil-muttakîne imâmâ",
+          "source": "Furkan Suresi, 74",
+          "category": "quran"
+        },
+        {
+          "id": "q6",
+          "arabic": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ",
+          "turkish": "Rabbim! Bana ve anne-babama verdiğin nimete şükretmemi ve razı olacağın salih amel yapmamı ilham et.",
+          "transliteration": "Rabbi evzi'nî en eşkure ni'metekelletî en'amte aleyye ve alâ vâlideyye ve en a'mele sâlihan terdâh",
+          "source": "Ahkaf Suresi, 15",
+          "category": "quran"
+        },
+        {
+          "id": "q7",
+          "arabic": "رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَانِ",
+          "turkish": "Rabbimiz! Bizi ve bizden önce iman etmiş kardeşlerimizi bağışla.",
+          "transliteration": "Rabbenâğfir lenâ ve li-ihvâninellezîne sebekûnâ bil-îmân",
+          "source": "Haşr Suresi, 10",
+          "category": "quran"
+        },
+        {
+          "id": "q8",
+          "arabic": "رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا وَارْزُقْ أَهْلَهُ مِنَ الثَّمَرَاتِ",
+          "turkish": "Rabbim! Bu beldeyi güvenli kıl ve halkına meyvelerden rızık ver.",
+          "transliteration": "Rabbic'al hâzel-belede âminen verzuk ehlehû mine's-semerât",
+          "source": "Bakara Suresi, 126",
+          "category": "quran"
+        },
+        {
+          "id": "q9",
+          "arabic": "رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِلَّذِينَ كَفَرُوا وَاغْفِرْ لَنَا رَبَّنَا",
+          "turkish": "Rabbimiz! Bizi kâfirler için bir fitne kılma ve bizi bağışla.",
+          "transliteration": "Rabbenâ lâ tec'alnâ fitneten lillezîne keferû vağfir lenâ Rabbenâ",
+          "source": "Mümtehine Suresi, 5",
+          "category": "quran"
+        }
+      ]
+    },
+    {
+      "id": "hajj_umrah",
+      "title": "Hac & Umre",
+      "title_en": "Hajj & Umrah",
+      "icon": "mosque",
+      "description": "Hac ve Umre seyahati için özel dualar ve zikirler.",
+      "duas": [
+        {
+          "id": "h1",
+          "arabic": "لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ لَا شَرِيكَ لَكَ",
+          "turkish": "Lebbeyk Allah'ım, lebbeyk. Lebbeyk, Senin ortağın yoktur. Şüphesiz hamd, nimet ve mülk yalnız Sanadır.",
+          "transliteration": "Lebbeykellâhumme lebbeyk, lebbeyke lâ şerîke leke lebbeyk, inne'l-hamde ve'n-ni'mete leke ve'l-mülk lâ şerîke lek",
+          "source": "Telbiye",
+          "category": "hajj_umrah"
+        },
+        {
+          "id": "h2",
+          "arabic": "اللَّهُمَّ حَجَّةٌ لَا رِيَاءَ فِيهَا وَلَا سُمْعَةَ",
+          "turkish": "Allah'ım! Bu hacda riya ve gösteriş olmasın.",
+          "transliteration": "Allâhumme hacceten lâ riyâe fîhâ ve lâ süm'ah",
+          "source": "Hac dualarından",
+          "category": "hajj_umrah"
+        },
+        {
+          "id": "h3",
+          "arabic": "اللَّهُمَّ اجْعَلْهُ حَجًّا مَبْرُورًا وَسَعْيًا مَشْكُورًا",
+          "turkish": "Allah'ım! Bunu makbul bir hac ve şükredilen bir sa'y eyle.",
+          "transliteration": "Allâhumme'c'alhü haccen mebrûren ve sa'yen meşkûrâ",
+          "source": "Hac dualarından",
+          "category": "hajj_umrah"
+        },
+        {
+          "id": "h4",
+          "arabic": "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي رَبَّنَا وَتَقَبَّلْ دُعَاءِ",
+          "turkish": "Rabbim! Beni ve neslimden gelenleri namazı dosdoğru kılanlardan eyle. Rabbimiz, duamı kabul buyur.",
+          "transliteration": "Rabbic'alnî mukîme's-salâti ve min zürriyyetî Rabbenâ ve tekabbel duâî",
+          "source": "İbrahim Suresi, 40",
+          "category": "hajj_umrah"
+        },
+        {
+          "id": "h5",
+          "arabic": "سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ",
+          "turkish": "Allah'ı tenzih ederim, hamd Allah'a mahsustur, Allah'tan başka ilah yoktur ve Allah en büyüktür.",
+          "transliteration": "Sübhânallâhi vel-hamdü lillâhi ve lâ ilâhe illallâhu vallâhu ekber",
+          "source": "Tavaf duası",
+          "category": "hajj_umrah"
+        },
+        {
+          "id": "h6",
+          "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+          "turkish": "Rabbimiz! Bize dünyada iyilik ver, ahirette iyilik ver ve bizi cehennem azabından koru.",
+          "transliteration": "Rabbenâ âtinâ fid-dünyâ haseneten ve fil-âhirati haseneten ve kınâ azâben-nâr",
+          "source": "Bakara Suresi, 201",
+          "category": "hajj_umrah"
+        },
+        {
+          "id": "h7",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ رِضَاكَ وَالْجَنَّةَ وَأَعُوذُ بِكَ مِنْ سَخَطِكَ وَالنَّارِ",
+          "turkish": "Allah'ım! Senden rızanı ve cenneti istiyorum, gazabından ve cehennemden sana sığınırım.",
+          "transliteration": "Allâhumme innî es'elüke rıdâke vel-cennete ve eûzü bike min sehatike ven-nâr",
+          "source": "Arafat duası",
+          "category": "hajj_umrah"
+        },
+        {
+          "id": "h8",
+          "arabic": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي",
+          "turkish": "Allah'ım! Sen affedicisin, affetmeyi seversin, beni de affet.",
+          "transliteration": "Allâhumme inneke afuvvun tuhibbu'l-afve fa'fu annî",
+          "source": "Tirmizî",
+          "category": "hajj_umrah"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "title": "Aile Duaları",
+      "title_en": "Family Supplications",
+      "icon": "heart",
+      "description": "Eş, çocuk ve aile huzuru için özel dualar.",
+      "duas": [
+        {
+          "id": "fam1",
+          "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+          "turkish": "Rabbimiz! Bize eşlerimizden ve neslimizden göz aydınlığı bağışla ve bizi takva sahiplerine önder kıl.",
+          "transliteration": "Rabbenâ heb lenâ min ezvâcinâ ve zürriyyâtinâ kurrate a'yunin vec'alnâ lil-muttakîne imâmâ",
+          "source": "Furkan Suresi, 74",
+          "category": "family"
+        },
+        {
+          "id": "fam2",
+          "arabic": "اللَّهُمَّ ارْزُقْنِي ذُرِّيَّةً طَيِّبَةً",
+          "turkish": "Allah'ım! Bana temiz ve salih bir nesil bahşet.",
+          "transliteration": "Allâhummerzuknî zürriyyeten tayyibeh",
+          "source": "Genel Dua",
+          "category": "family"
+        },
+        {
+          "id": "fam3",
+          "arabic": "رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنْتَ خَيْرُ الْوَارِثِينَ",
+          "turkish": "Rabbim! Beni yalnız bırakma, Sen varislerin en hayırlısısın.",
+          "transliteration": "Rabbi lâ tezernî ferden ve ente hayru'l-vârisîn",
+          "source": "Enbiyâ Suresi, 89",
+          "category": "family"
+        },
+        {
+          "id": "fam4",
+          "arabic": "رَبِّ هَبْ لِي مِنْ لَدُنْكَ ذُرِّيَّةً طَيِّبَةً إِنَّكَ سَمِيعُ الدُّعَاءِ",
+          "turkish": "Rabbim! Katından bana temiz bir nesil bahşet. Şüphesiz Sen duayı hakkıyla işitensin.",
+          "transliteration": "Rabbi heb lî min ledünke zürriyyeten tayyibeten inneke semîu'd-duâ",
+          "source": "Âl-i İmrân Suresi, 38",
+          "category": "family"
+        },
+        {
+          "id": "fam5",
+          "arabic": "اللَّهُمَّ اجْعَلْ بَيْنَنَا مَوَدَّةً وَرَحْمَةً",
+          "turkish": "Allah'ım! Aramıza sevgi ve merhamet ver.",
+          "transliteration": "Allâhumme'c'al beynenâ meveddeten ve rahmeten",
+          "source": "Genel Dua",
+          "category": "family"
+        },
+        {
+          "id": "fam6",
+          "arabic": "رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُسْلِمَةً لَكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ",
+          "turkish": "Rabbimiz! Bizi sana teslim olmuş kimseler kıl. Soyumuzdan da sana teslim olmuş bir ümmet çıkar. Bize ibadet yerlerini ve ilkelerini göster. Tövbemizi kabul et. Çünkü sen tövbeleri çok kabul edensin, çok merhametli olansın.",
+          "transliteration": "Rabbenâ vec'alnâ müslimeyni leke ve min zürriyyetinâ ümmeten müslimeten leke ve erinâ menâsikenâ ve tüb aleynâ inneke entet-tevvâbür-rahîm",
+          "source": "Bakara Suresi, 128",
+          "category": "family"
+        },
+        {
+          "id": "fam7",
+          "arabic": "اللَّهُمَّ بَارِكْ لَنَا فِي أَهْلِنَا وَأَوْلَادِنَا",
+          "turkish": "Allah'ım! Ailemize ve çocuklarımıza bereket ver.",
+          "transliteration": "Allâhumme bârik lenâ fî ehlinâ ve evlâdinâ",
+          "source": "Genel Dua",
+          "category": "family"
+        }
+      ]
+    },
+    {
+      "id": "illness",
+      "title": "Hastalık & Şifa",
+      "title_en": "Illness & Healing",
+      "icon": "heart",
+      "description": "Hastalıkta okunan şifa ve korunma duaları.",
+      "duas": [
+        {
+          "id": "ill1",
+          "arabic": "اللَّهُمَّ رَبَّ النَّاسِ أَذْهِبِ الْبَأْسَ وَاشْفِ أَنْتَ الشَّافِي لَا شِفَاءَ إِلَّا شِفَاؤُكَ شِفَاءٌ لَا يُغَادِرُ سَقَمًا",
+          "turkish": "Allah'ım! Ey insanların Rabbi! Hastalığı gider, şifa ver. Sen Şâfi'sin. Senin şifandan başka şifa yoktur. Öyle bir şifa ver ki hiçbir hastalık bırakmasın.",
+          "transliteration": "Allâhumme Rabben-nâsi ezhibil-be'se veşfi enteş-şâfî lâ şifâe illâ şifâüke şifâen lâ yuğâdiru sekamâ",
+          "source": "Buhârî",
+          "category": "illness"
+        },
+        {
+          "id": "ill2",
+          "arabic": "أَسْأَلُ اللَّهَ الْعَظِيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفِيَكَ",
+          "turkish": "Büyük Arş'ın Rabbi olan yüce Allah'tan sana şifa vermesini diliyorum.",
+          "transliteration": "Es'elullâhe'l-Azîme Rabbe'l-Arşi'l-Azîmi en yeşfiyek",
+          "source": "Tirmizî",
+          "category": "illness"
+        },
+        {
+          "id": "ill3",
+          "arabic": "بِسْمِ اللَّهِ تُرْبَةُ أَرْضِنَا بِرِيقَةِ بَعْضِنَا يُشْفَى سَقِيمُنَا بِإِذْنِ رَبِّنَا",
+          "turkish": "Allah'ın adıyla. Arzımızın toprağı ve birimizin tükürüğü ile, Rabbimizin izniyle hastamız şifa bulur.",
+          "transliteration": "Bismillâhi turbetu ardınâ bi-rîkati ba'dınâ yüşfâ sekîmunâ bi-izni Rabbinâ",
+          "source": "Buhârî",
+          "category": "illness"
+        },
+        {
+          "id": "ill4",
+          "arabic": "أَعُوذُ بِعِزَّةِ اللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ وَأُحَاذِرُ",
+          "turkish": "Karşılaştığım ve çekindiğim acının şerrinden Allah'ın izzetine ve kudretine sığınırım.",
+          "transliteration": "Eûzü bi-izzetillâhi ve kudratihî min şerri mâ ecidü ve uhâziru",
+          "source": "Müslim",
+          "category": "illness"
+        },
+        {
+          "id": "ill5",
+          "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي وَاحْلُلْ عُقْدَةً مِنْ لِسَانِي يَفْقَهُوا قَوْلِي",
+          "turkish": "Rabbim! Göğsümü genişlet, işimi kolaylaştır, dilimdeki düğümü çöz ki sözümü anlasınlar.",
+          "transliteration": "Rabbişrahlî sadrî ve yessirlî emrî vahlül ukdeten min lisânî yefkahû kavlî",
+          "source": "Taha Suresi, 25-28",
+          "category": "illness"
+        },
+        {
+          "id": "ill6",
+          "arabic": "وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ",
+          "turkish": "Hasta olduğumda O bana şifa verir.",
+          "transliteration": "Ve izâ meridtu fehüve yeşfîn",
+          "source": "Şuara Suresi, 80",
+          "category": "illness"
+        },
+        {
+          "id": "ill7",
+          "arabic": "قُلْ هُوَ لِلَّذِينَ آمَنُوا هُدًى وَشِفَاءٌ",
+          "turkish": "De ki: O (Kur'an), iman edenler için hidayet ve şifadır.",
+          "transliteration": "Kul hüve lillezîne âmenû hüden ve şifâun",
+          "source": "Fussilet Suresi, 44",
+          "category": "illness"
+        },
+        {
+          "id": "ill8",
+          "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ",
+          "turkish": "Bütün şeytanlardan, zehirli haşerattan ve kem gözlerden Allah'ın kusursuz kelimelerine sığınırım.",
+          "transliteration": "Eûzü bi-kelimâtillâhit-tâmmâti min külli şeytânin ve hâmmeh, ve min külli aynin lâmmeh",
+          "source": "Buhârî",
+          "category": "illness"
+        },
+        {
+          "id": "ill9",
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبَرَصِ وَالْجُنُونِ وَالْجُذَامِ وَمِنْ سَيِّئِ الْأَسْقَامِ",
+          "turkish": "Allah'ım! Alaca hastalığından, delilikten, cüzzamdan ve kötü hastalıklardan sana sığınırım.",
+          "transliteration": "Allâhumme innî eûzü bike minel-barası vel-cünûni vel-cüzâmi ve min seyyiil-eskâm",
+          "source": "Ebû Dâvud",
+          "category": "illness"
+        }
+      ]
+    },
+    {
+      "id": "debt",
+      "title": "Borç & Rızık",
+      "title_en": "Debt & Sustenance",
+      "icon": "noon",
+      "description": "Borç ödeme ve rızık artırma duaları.",
+      "duas": [
+        {
+          "id": "debt1",
+          "arabic": "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ",
+          "turkish": "Allah'ım! Helal rızkınla beni haramdan koru ve fazlınla beni Senden başkasına muhtaç etme.",
+          "transliteration": "Allâhummekfinî bi-halâlike an harâmike ve ağninî bi-fadlike ammen sivâk",
+          "source": "Tirmizî",
+          "category": "debt"
+        },
+        {
+          "id": "debt2",
+          "arabic": "اللَّهُمَّ يَا مُغْنِي أَغْنِنِي",
+          "turkish": "Allah'ım! Ey Zengin Kılan! Beni zengin kıl.",
+          "transliteration": "Allâhumme yâ Muğnî ağninî",
+          "source": "Genel Dua",
+          "category": "debt"
+        },
+        {
+          "id": "debt3",
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ",
+          "turkish": "Allah'ım! Günah ve borçtan sana sığınırım.",
+          "transliteration": "Allâhumme innî eûzü bike minel-me'semi vel-mağrem",
+          "source": "Buhârî",
+          "category": "debt"
+        },
+        {
+          "id": "debt4",
+          "arabic": "اللَّهُمَّ ارْزُقْنِي رِزْقًا حَلَالًا طَيِّبًا مُبَارَكًا فِيهِ",
+          "turkish": "Allah'ım! Bana helal, temiz ve bereketli rızık ver.",
+          "transliteration": "Allâhummerzuknî rizkan halâlen tayyiben mübâreken fîh",
+          "source": "Genel Dua",
+          "category": "debt"
+        },
+        {
+          "id": "debt5",
+          "arabic": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+          "turkish": "Rabbim! Bana indireceğin her hayra muhtacım.",
+          "transliteration": "Rabbi innî limâ enzelte ileyye min hayrin fakîr",
+          "source": "Kasas Suresi, 24",
+          "category": "debt"
+        },
+        {
+          "id": "debt6",
+          "arabic": "اللَّهُمَّ أَجِرْنِي مِنَ الضَّرِّ وَأَغْنِنِي مِنَ الْفَقْرِ",
+          "turkish": "Allah'ım! Zarardan beni koru ve fakirlikten beni kurtar(zengin kıl).",
+          "transliteration": "Allâhumme ecirnî mined-darri ve ağninî minel-fakr",
+          "source": "Genel Dua",
+          "category": "debt"
+        }
+      ]
+    },
+    {
+      "id": "exams",
+      "title": "Sınav & Başarı",
+      "title_en": "Exams & Success",
+      "icon": "noon",
+      "description": "Sınav ve iş başarısı için dualar.",
+      "duas": [
+        {
+          "id": "ex1",
+          "arabic": "رَبِّ زِدْنِي عِلْمًا",
+          "turkish": "Rabbim! İlmimi artır.",
+          "transliteration": "Rabbi zidnî ilmen",
+          "source": "Taha Suresi, 114",
+          "category": "exams"
+        },
+        {
+          "id": "ex2",
+          "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي",
+          "turkish": "Rabbim! Göğsümü genişlet, işimi kolaylaştır.",
+          "transliteration": "Rabbişrahlî sadrî ve yessirlî emrî",
+          "source": "Taha Suresi, 25-26",
+          "category": "exams"
+        },
+        {
+          "id": "ex3",
+          "arabic": "اللَّهُمَّ فَقِّهْنِي فِي الدِّينِ وَعَلِّمْنِي التَّأْوِيلَ",
+          "turkish": "Allah'ım! Beni dinde derin kavrayış sahibi kıl ve te'vili (Kuran'ın yorumunu) öğret.",
+          "transliteration": "Allâhumme fekkıhnî fid-dîni ve allimnî't-te'vîl",
+          "source": "Buhârî",
+          "category": "exams"
+        },
+        {
+          "id": "ex4",
+          "arabic": "اللَّهُمَّ أَلْهِمْنِي رُشْدِي وَأَعِذْنِي مِنْ شَرِّ نَفْسِي",
+          "turkish": "Allah'ım! Bana doğru yolu ilham et ve nefsimin şerrinden koru.",
+          "transliteration": "Allâhumme elhimnî rüşdî ve eıznî min şerri nefsî",
+          "source": "Tirmizî",
+          "category": "exams"
+        },
+        {
+          "id": "ex5",
+          "arabic": "رَبِّ هَبْ لِي حُكْمًا وَأَلْحِقْنِي بِالصَّالِحِينَ",
+          "turkish": "Rabbim! Bana hikmet ver ve beni salihlerle birlikte kıl.",
+          "transliteration": "Rabbi heb lî hukmen ve elhıknî bis-sâlihîn",
+          "source": "Şuara Suresi, 83",
+          "category": "exams"
+        },
+        {
+          "id": "ex6",
+          "arabic": "وَاجْعَلْ لِي وَزِيرًا مِنْ أَهْلِي",
+          "turkish": "Bana ailemden bir yardımcı ver.",
+          "transliteration": "Vec'al lî vezîren min ehlî",
+          "source": "Taha Suresi, 29",
+          "category": "exams"
+        },
+        {
+          "id": "ex7",
+          "arabic": "اللَّهُمَّ يَسِّرْ وَلَا تُعَسِّرْ رَبِّ تَمِّمْ بِالْخَيْرِ",
+          "turkish": "Allah'ım! Kolaylaştır, zorlaştırma. Rabbim, hayırla tamamına erdir.",
+          "transliteration": "Allâhumme yessir ve lâ tu'assir, Rabbi temmim bil-hayr",
+          "source": "Genel Sınav Duası",
+          "category": "exams"
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "title": "İş & Kariyer",
+      "title_en": "Work & Career",
+      "icon": "noon",
+      "description": "İş bulma ve kariyer duaları.",
+      "duas": [
+        {
+          "id": "wk1",
+          "arabic": "وَاجْعَلْ لِي مِنْ لَدُنْكَ سُلْطَانًا نَصِيرًا",
+          "turkish": "Ve katından bana yardımcı bir güç (kudret) ver.",
+          "transliteration": "Vec'al lî min ledünke sultânen nesîrâ",
+          "source": "İsrâ Suresi, 80",
+          "category": "work"
+        },
+        {
+          "id": "wk2",
+          "arabic": "اللَّهُمَّ اجْعَلْنِي مُفْلِحًا مُنْجِحًا مُبَارَكًا فِي عَمَلِي",
+          "turkish": "Allah'ım! Beni başarılı, muvaffak ve amellerimde bereketli kıl.",
+          "transliteration": "Allâhumme'c'alnî muflihan muncihan mübâreken fî amelî",
+          "source": "Genel Dua",
+          "category": "work"
+        },
+        {
+          "id": "wk3",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عَمَلًا نَافِعًا وَرِزْقًا وَاسِعًا وَبَرَكَةً فِي عَمَلِي",
+          "turkish": "Allah'ım! Senden faydalı bir iş, geniş rızık ve işimde bereket istiyorum.",
+          "transliteration": "Allâhumme innî es'elüke amelen nâfian ve rizkan vâsian ve bereketen fî amelî",
+          "source": "Genel Dua",
+          "category": "work"
+        },
+        {
+          "id": "wk4",
+          "arabic": "اللَّهُمَّ بَارِكْ لِي فِي أَجْرِي وَفِي رِزْقِي",
+          "turkish": "Allah'ım! Ücretimde ve rızkımda bereket ver.",
+          "transliteration": "Allâhumme bârik lî fî ecrî ve fî rızkî",
+          "source": "Genel Dua",
+          "category": "work"
+        },
+        {
+          "id": "wk5",
+          "arabic": "رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+          "turkish": "Rabbimiz! Nurumuzu tamamla ve bizi bağışla. Şüphesiz Sen her şeye kadirsin.",
+          "transliteration": "Rabbenâ etmim lenâ nûrenâ vağfir lenâ inneke alâ külli şey'in kadîr",
+          "source": "Tahrim Suresi, 8",
+          "category": "work"
+        }
+      ]
+    },
+    {
+      "id": "new_home",
+      "title": "Yeni Ev & Taşınma",
+      "title_en": "New Home",
+      "icon": "mosque",
+      "description": "Yeni eve taşınma ve ev duaları.",
+      "duas": [
+        {
+          "id": "nh1",
+          "arabic": "اللَّهُمَّ اجْعَلْ هَذَا الْبَيْتَ بَيْتًا مُبَارَكًا وَمَوْضِعَ أَمْنٍ وَسَلَامٍ",
+          "turkish": "Allah'ım! Bu evi bereketli, emniyet ve selamet yeri kıl.",
+          "transliteration": "Allâhumme'c'al hâzel-beyte beyten mübâreken ve mevdıa emnin ve selâm",
+          "source": "Genel Dua",
+          "category": "new_home"
+        },
+        {
+          "id": "nh2",
+          "arabic": "اللَّهُمَّ اجْعَلْنِي وَأَهْلِي فِيهِ فِي خَيْرٍ وَبَرَكَةٍ",
+          "turkish": "Allah'ım! Beni ve ailemi bu evde hayır ve bereket içinde kıl.",
+          "transliteration": "Allâhumme'c'alnî ve ehlî fîhi fî hayrin ve berekeh",
+          "source": "Genel Dua",
+          "category": "new_home"
+        },
+        {
+          "id": "nh3",
+          "arabic": "بَارَكَ اللَّهُ لَنَا فِيهِ وَبَارَكْنَا عَلَيْهِ",
+          "turkish": "Allah bu evde bize bereket versin ve bizi de bereketli kılsın.",
+          "transliteration": "Bârekallâhu lenâ fîhi ve bâreknâ aleyh",
+          "source": "Genel Dua",
+          "category": "new_home"
+        },
+        {
+          "id": "nh4",
+          "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+          "turkish": "Yaratılanların şerrinden Allah'ın tam kelimelerine sığınırım.",
+          "transliteration": "Eûzü bi-kelimâtillâhit-tâmmâti min şerri mâ halak",
+          "source": "Müslim",
+          "category": "new_home"
+        },
+        {
+          "id": "nh5",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ الْمَوْلِجِ وَخَيْرَ الْمَخْرَجِ بِسْمِ اللَّهِ وَلَجْنَا وَبِسْمِ اللَّهِ خَرَجْنَا وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا",
+          "turkish": "Allah'ım! Girişin ve çıkışın hayrını senden isterim. Allah'ın adıyla girdik, Allah'ın adıyla çıktık ve sadece Rabbimiz Allah'a tevekkül ettik.",
+          "transliteration": "Allâhumme innî es'elüke hayral-mevlici ve hayral-mahrac, bismillâhi velecnâ ve bismillâhi haracnâ ve alallâhi Rabbinâ tevekkelnâ",
+          "source": "Ebû Dâvud",
+          "category": "new_home"
+        }
+      ]
+    },
+    {
+      "id": "new_baby",
+      "title": "Yeni Bebek & Doğum",
+      "title_en": "New Baby",
+      "icon": "heart",
+      "description": "Doğum ve yeni bebek için dualar.",
+      "duas": [
+        {
+          "id": "nb1",
+          "arabic": "اللَّهُمَّ اجْعَلْهُ لَنَا قُرَّةَ عَيْنٍ وَاجْعَلْهُ مِنَ الصَّالِحِينَ",
+          "turkish": "Allah'ım! Onu bize göz aydınlığı kıl ve salihlerden eyle.",
+          "transliteration": "Allâhumme'c'alhü lenâ kurrate a'yünin vec'alhü mine's-sâlihîn",
+          "source": "Genel Dua",
+          "category": "new_baby"
+        },
+        {
+          "id": "nb2",
+          "arabic": "اللَّهُمَّ بَارِكْ لَنَا فِي مَوْلُودِنَا وَاجْعَلْهُ شَاكِرًا صَالِحًا",
+          "turkish": "Allah'ım! Yeni doğan bebeğimizde bereket ver ve onu şükreden, salih biri kıl.",
+          "transliteration": "Allâhumme bârik lenâ fî mevlûdinâ vec'alhü şâkiren sâlihâ",
+          "source": "Genel Dua",
+          "category": "new_baby"
+        },
+        {
+          "id": "nb3",
+          "arabic": "رَبِّ هَبْ لِي مِنَ الصَّالِحِينَ",
+          "turkish": "Rabbim! Bana salihlerden birini bahşet.",
+          "transliteration": "Rabbi heb lî mine's-sâlihîn",
+          "source": "Saffat Suresi, 100",
+          "category": "new_baby"
+        },
+        {
+          "id": "nb4",
+          "arabic": "اللَّهُمَّ اجْعَلْهُ حَسَنَ الْخُلُقِ حَسَنَ الْخِلْقَةِ",
+          "turkish": "Allah'ım! Onu güzel ahlaklı ve güzel yaratılışlı kıl.",
+          "transliteration": "Allâhumme'c'alhü hasene'l-hulukı hasene'l-hılkah",
+          "source": "Genel Dua",
+          "category": "new_baby"
+        },
+        {
+          "id": "nb5",
+          "arabic": "اللَّهُمَّ اجْعَلْهُ بَارًّا بِوَالِدَيْهِ وَمُطِيعًا لِرَبِّهِ",
+          "turkish": "Allah'ım! Onu anne-babasına iyilik eden ve Rabbine itaatkâr biri kıl.",
+          "transliteration": "Allâhumme'c'alhü bârren bi-vâlideyhi ve mutîan li-Rabbih",
+          "source": "Genel Dua",
+          "category": "new_baby"
+        }
+      ]
+    },
+    {
+      "id": "death",
+      "title": "Ölüm & Cenaze",
+      "title_en": "Death & Funeral",
+      "icon": "moon",
+      "description": "Ölüm anı ve cenaze duaları.",
+      "duas": [
+        {
+          "id": "d1",
+          "arabic": "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+          "turkish": "Şüphesiz biz Allah'a aidiz ve O'na döneceğiz.",
+          "transliteration": "İnnâ lillâhi ve innâ ileyhi râciûn",
+          "source": "Bakara Suresi, 156",
+          "category": "death"
+        },
+        {
+          "id": "d2",
+          "arabic": "اللَّهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ وَعَافِهِ وَاعْفُ عَنْهُ",
+          "turkish": "Allah'ım! Ona mağfiret et, rahmet et, afiyet ver ve onu affet.",
+          "transliteration": "Allâhummağfir lehû verhamhû ve âfihî va'fu anh",
+          "source": "Müslim",
+          "category": "death"
+        },
+        {
+          "id": "d3",
+          "arabic": "اللَّهُمَّ أَدْخِلْهُ الْجَنَّةَ وَأَعِذْهُ مِنْ عَذَابِ الْقَبْرِ وَعَذَابِ النَّارِ",
+          "turkish": "Allah'ım! Onu cennete koy, kabir azabından ve cehennem azabından koru.",
+          "transliteration": "Allâhumme edhılhü'l-cennete ve eızhü min azâbil-kabri ve azâbin-nâr",
+          "source": "Buhârî",
+          "category": "death"
+        },
+        {
+          "id": "d4",
+          "arabic": "اللَّهُمَّ اجْعَلْ قَبْرَهُ نُورًا وَضَاعِفْ لَهُ الْحَسَنَاتِ",
+          "turkish": "Allah'ım! Kabrini nurlandır ve onun hasenatlarını kat kat artır.",
+          "transliteration": "Allâhumme'c'al kabrahû nûren ve dâıf lehül-hasenât",
+          "source": "Genel Dua",
+          "category": "death"
+        },
+        {
+          "id": "d5",
+          "arabic": "اللَّهُمَّ اجْعَلْ الْفِرْدَوْسَ مَثْوَاهُ",
+          "turkish": "Allah'ım! Firdevs cennetini onun makamı kıl.",
+          "transliteration": "Allâhumme'c'alil-firdevse mesvâh",
+          "source": "Genel Dua",
+          "category": "death"
+        }
+      ]
+    },
+    {
+      "id": "taharat",
+      "title": "Taharet & Abdest",
+      "title_en": "Purification",
+      "icon": "noon",
+      "description": "Abdest ve temizlik duaları.",
+      "duas": [
+        {
+          "id": "th1",
+          "arabic": "بِسْمِ اللَّهِ",
+          "turkish": "Allah'ın adıyla.",
+          "transliteration": "Bismillâh",
+          "source": "Ebû Dâvud",
+          "category": "taharat"
+        },
+        {
+          "id": "th2",
+          "arabic": "أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+          "turkish": "Şehadet ederim ki Allah'tan başka ilah yoktur, O tektir, ortağı yoktur. Ve yine şehadet ederim ki Muhammed O'nun kulu ve elçisidir.",
+          "transliteration": "Eşhedü en lâ ilâhe illallâhu vahdehû lâ şerîke leh ve eşhedü enne Muhammeden abduhû ve rasûlüh",
+          "source": "Müslim",
+          "category": "taharat"
+        },
+        {
+          "id": "th3",
+          "arabic": "اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",
+          "turkish": "Allah'ım! Beni tövbe edenlerden ve temizlenenlerden kıl.",
+          "transliteration": "Allâhumme'c'alnî minet-tevvâbîne vec'alnî minel-mütetahhirîn",
+          "source": "Tirmizî",
+          "category": "taharat"
+        },
+        {
+          "id": "th4",
+          "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ",
+          "turkish": "Allah'ım! Seni hamd ile tenzih ederim. Senden başka ilah olmadığına şehadet ederim. Senden bağışlanma diler, sana tövbe ederim.",
+          "transliteration": "Sübhânekallâhumme ve bi-hamdike eşhedü enlâ ilâhe illâ ente estağfiruke ve etûbü ileyk",
+          "source": "Nesâî",
+          "category": "taharat"
+        }
+      ]
+    }
+  ],
+  "dhikr_of_day": [
+    {
+      "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ سُبْحَانَ اللَّهِ الْعَظِيمِ",
+      "turkish": "Allah'ı hamd ile tenzih ederim; büyük olan Allah'ı tenzih ederim.",
+      "transliteration": "Sübhânallâhi ve bi-hamdihî, Sübhânallâhi'l-Azîm",
+      "source": "Buhârî"
+    },
+    {
+      "arabic": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+      "turkish": "Güç ve kuvvet ancak Allah'tandır.",
+      "transliteration": "Lâ havle ve lâ kuvvete illâ billâh",
+      "source": "Buhârî"
+    },
+    {
+      "arabic": "أَسْتَغْفِرُ اللَّهَ",
+      "turkish": "Allah'tan bağışlanma dilerim.",
+      "transliteration": "Estağfirullâh",
+      "source": "Müslim"
+    },
+    {
+      "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
+      "turkish": "Allah'ım! Muhammed'e ve Âl-i Muhammed'e salât eyle.",
+      "transliteration": "Allâhumme salli alâ Muhammedin ve alâ âli Muhammed",
+      "source": "Buhârî"
+    }
+  ]
+}

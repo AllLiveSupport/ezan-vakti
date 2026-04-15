@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uygulama başlarken görünen native arka plan — tema rengiyle eşleştir, beyaz flaş yok -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/launch_bg_color" />
+</layer-list>
