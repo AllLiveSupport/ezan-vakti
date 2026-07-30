@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/services/battery_service.dart';
 import '../../shared/providers/prayer_provider.dart';
 import '../../shared/models/prayer_times_model.dart';
 
@@ -36,14 +36,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     // App lifecycle observer ekle
     WidgetsBinding.instance.addObserver(this);
 
-    // Bildirim izni kontrol — splash'ta verilmemişse fallback olarak iste
+    // Bildirim & Arka Plan İzinleri Kontrolü (Pil optimizasyonu + Kesin Alarm dahil)
     WidgetsBinding.instance.addPostFrameCallback((_) => _ensureNotificationPermission());
   }
 
   Future<void> _ensureNotificationPermission() async {
-    final status = await Permission.notification.status;
-    if (!status.isGranted && !status.isPermanentlyDenied) {
-      await Permission.notification.request();
+    final perms = await BatteryOptimizationService.checkAllPermissions();
+    if (!perms.values.every((p) => p) && mounted) {
+      await BatteryOptimizationService.requestAllPermissions(context);
     }
   }
   

@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:permission_handler/permission_handler.dart';
+import 'package:permission_handler/permission_handler.dart' as ph;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 
@@ -129,13 +129,13 @@ class BatteryOptimizationService {
 
   /// Bildirim izni var mı?
   static Future<bool> hasNotificationPermission() async {
-    final status = await Permission.notification.status;
+    final status = await ph.Permission.notification.status;
     return status.isGranted;
   }
 
   /// Bildirim izni iste
   static Future<bool> requestNotificationPermission() async {
-    final status = await Permission.notification.request();
+    final status = await ph.Permission.notification.request();
     return status.isGranted;
   }
 
@@ -145,7 +145,7 @@ class BatteryOptimizationService {
 
   /// Uygulama ayarlarını aç
   static Future<void> openAppSettings() async {
-    await openAppSettings();
+    await ph.openAppSettings(); // ← permission_handler paketi fonksiyonu
   }
 
   /// Tüm gerekli izinlerin durumunu kontrol et
@@ -171,12 +171,11 @@ class BatteryOptimizationService {
       barrierDismissible: false,
       builder: (context) => _PermissionDialog(
         permissions: permissions,
-        onRequest: () async {
-          // Bildirim izni
-          if (!permissions['notifications']!) {
-            await requestNotificationPermission();
+        onRefresh: () async {
+          final updated = await checkAllPermissions();
+          if (updated.values.every((p) => p) && context.mounted) {
+            Navigator.of(context).pop(true);
           }
-          if (context.mounted) Navigator.of(context).pop(true);
         },
       ),
     );
@@ -186,25 +185,54 @@ class BatteryOptimizationService {
 }
 
 /// İzin isteme dialogu
-class _PermissionDialog extends StatelessWidget {
+class _PermissionDialog extends StatefulWidget {
   final Map<String, bool> permissions;
-  final VoidCallback onRequest;
+  final VoidCallback onRefresh;
 
   const _PermissionDialog({
     required this.permissions,
-    required this.onRequest,
+    required this.onRefresh,
   });
 
   @override
+  State<_PermissionDialog> createState() => _PermissionDialogState();
+}
+
+class _PermissionDialogState extends State<_PermissionDialog> {
+  late Map<String, bool> _perms;
+
+  @override
+  void initState() {
+    super.initState();
+    _perms = Map.from(widget.permissions);
+  }
+
+  Future<void> _refresh() async {
+    final updated = await BatteryOptimizationService.checkAllPermissions();
+    if (mounted) {
+      setState(() => _perms = updated);
+      if (updated.values.every((p) => p)) {
+        widget.onRefresh();
+      }
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final allGranted = permissions.values.every((p) => p);
+    final allGranted = _perms.values.every((p) => p);
     
     return AlertDialog(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       title: const Row(
         children: [
-          Icon(Icons.notifications_active, color: Colors.green),
+          Icon(Icons.battery_alert_rounded, color: Colors.orange, size: 28),
           SizedBox(width: 12),
-          Text('Bildirim İzinleri'),
+          Expanded(
+            child: Text(
+              'Arka Plan İzinleri',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            ),
+          ),
         ],
       ),
       content: Column(
@@ -212,26 +240,39 @@ class _PermissionDialog extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Ezan vakitlerinde kesintisiz bildirim alabilmek için aşağıdaki ayarları yapmanız gerekli:',
-            style: TextStyle(fontSize: 14),
+            'Ezan vakitlerinde alarmların ve bildirimlerin telefon kilitliyken kesintisiz çalışması için lütfen aşağıdaki kısıtlamaları kaldırın:',
+            style: TextStyle(fontSize: 13, height: 1.4),
           ),
           const SizedBox(height: 16),
           _PermissionItem(
-            icon: Icons.notifications,
+            icon: Icons.notifications_active_rounded,
             title: 'Bildirim İzni',
-            granted: permissions['notifications']!,
+            subtitle: 'Ezan vakti bildirimleri için',
+            granted: _perms['notifications'] ?? false,
+            onTap: () async {
+              await BatteryOptimizationService.requestNotificationPermission();
+              await _refresh();
+            },
           ),
           _PermissionItem(
-            icon: Icons.battery_full,
-            title: 'Pil Optimizasyonu',
-            granted: permissions['batteryOptimization']!,
-            subtitle: 'Uygulamanın arka planda çalışması için gerekli',
+            icon: Icons.battery_saver_rounded,
+            title: 'Pil Kısıtlamasını Kaldır',
+            subtitle: 'Android pil optimizasyonunu yoksay',
+            granted: _perms['batteryOptimization'] ?? false,
+            onTap: () async {
+              await BatteryOptimizationService.requestBatteryOptimizationBypass();
+              await _refresh();
+            },
           ),
           _PermissionItem(
-            icon: Icons.alarm,
-            title: 'Kesin Alarm',
-            granted: permissions['exactAlarms']!,
-            subtitle: 'Tam vakitte bildirim için gerekli',
+            icon: Icons.alarm_rounded,
+            title: 'Tam Zamanlı Alarm',
+            subtitle: 'Tam vaktinde ezan okuyabilmek için',
+            granted: _perms['exactAlarms'] ?? false,
+            onTap: () async {
+              await BatteryOptimizationService.requestExactAlarmPermission();
+              await _refresh();
+            },
           ),
         ],
       ),
@@ -242,8 +283,24 @@ class _PermissionDialog extends StatelessWidget {
         ),
         if (!allGranted)
           FilledButton(
-            onPressed: onRequest,
-            child: const Text('İzinleri Ver'),
+            onPressed: () async {
+              if (!(_perms['notifications'] ?? false)) {
+                await BatteryOptimizationService.requestNotificationPermission();
+              }
+              if (!(_perms['batteryOptimization'] ?? false)) {
+                await BatteryOptimizationService.requestBatteryOptimizationBypass();
+              }
+              if (!(_perms['exactAlarms'] ?? false)) {
+                await BatteryOptimizationService.requestExactAlarmPermission();
+              }
+              await _refresh();
+            },
+            child: const Text('Tüm İzinleri Ver'),
+          )
+        else
+          FilledButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            child: const Text('Tamam'),
           ),
       ],
     );
@@ -255,46 +312,58 @@ class _PermissionItem extends StatelessWidget {
   final String title;
   final String? subtitle;
   final bool granted;
+  final VoidCallback onTap;
 
   const _PermissionItem({
     required this.icon,
     required this.title,
     this.subtitle,
     required this.granted,
+    required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8),
-      child: Row(
-        children: [
-          Icon(
-            granted ? Icons.check_circle : Icons.cancel,
-            color: granted ? Colors.green : Colors.red,
-            size: 20,
-          ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: const TextStyle(fontWeight: FontWeight.w600),
-                ),
-                if (subtitle != null)
+    return InkWell(
+      onTap: granted ? null : onTap,
+      borderRadius: BorderRadius.circular(12),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+        child: Row(
+          children: [
+            Icon(
+              granted ? Icons.check_circle_rounded : Icons.warning_amber_rounded,
+              color: granted ? Colors.green : Colors.orange,
+              size: 24,
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
                   Text(
-                    subtitle!,
+                    title,
                     style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.grey[600],
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                      color: granted ? Colors.black87 : Colors.orange[900],
                     ),
                   ),
-              ],
+                  if (subtitle != null)
+                    Text(
+                      subtitle!,
+                      style: TextStyle(
+                        fontSize: 11,
+                        color: Colors.grey[600],
+                      ),
+                    ),
+                ],
+              ),
             ),
-          ),
-        ],
+            if (!granted)
+              const Icon(Icons.chevron_right_rounded, color: Colors.orange, size: 20),
+          ],
+        ),
       ),
     );
   }

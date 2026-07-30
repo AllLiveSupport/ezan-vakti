@@ -25,7 +25,7 @@ android {
         applicationId = "com.alllivesupport.ezanvakti"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = 28 // Android 9+ — güvenilir alarm/bildirim/arka plan desteği için
+        minSdk = 28 // Android 9+ (API 28) — Android 9'dan 17'ye kadar destek
         targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName

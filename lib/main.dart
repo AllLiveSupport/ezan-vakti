@@ -25,6 +25,7 @@ import 'core/services/alarm_service.dart';
 import 'core/services/notification_service.dart';
 import 'core/services/widget_service.dart';
 import 'core/services/reminder_service.dart';
+import 'core/services/battery_service.dart';
 import 'shared/providers/settings_provider.dart';
 import 'features/splash/splash_screen.dart';
 import 'features/kerahat/kerahat_screen.dart';
@@ -54,6 +55,7 @@ void main() async {
     NotificationService.init(),
     WidgetService.initialize(),
     ReminderService.init(),
+    BatteryOptimizationService.init(),
   ]);
 
   // Native Foreground Service KAPATILDI - sadece Flutter bildirimi kullanılıyor

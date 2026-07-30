@@ -70,6 +70,7 @@ flutter:
 
   assets:
     - assets/data/turkey_cities.json
+    - assets/data/turkey_mosques.json
     - assets/data/duas.json
     - assets/data/world_cities.json
     - assets/data/prayer_times/2026/

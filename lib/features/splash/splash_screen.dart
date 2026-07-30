@@ -82,24 +82,33 @@ class _SplashScreenState extends State<SplashScreen> {
         return;
       }
 
-      // İzin var, konumu al (hızlı, yaklaşık konum yeterli)
-      final position = await Geolocator.getCurrentPosition(
+      // İzin var, önce son bilinen konumu hızlıca dene
+      Position? position = await Geolocator.getLastKnownPosition();
+
+      // Son konum yoksa canlı konum al (5s zaman aşımlı)
+      position ??= await Geolocator.getCurrentPosition(
         locationSettings: const LocationSettings(
-          accuracy: LocationAccuracy.low, // Hızlı almak için low
-          timeLimit: Duration(seconds: 5),  // 5 saniyede timeout
+          accuracy: LocationAccuracy.medium,
+          timeLimit: Duration(seconds: 5),
         ),
       );
 
-      // Konumu kaydet
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setDouble('splash_cached_lat', position.latitude);
-      await prefs.setDouble('splash_cached_lon', position.longitude);
-      await prefs.setInt('splash_cached_at', DateTime.now().millisecondsSinceEpoch);
-      
-      debugPrint('📍 Splash konum kaydedildi: ${position.latitude}, ${position.longitude}');
+      final isTurkey = position.latitude >= 35.5 &&
+          position.latitude <= 42.5 &&
+          position.longitude >= 25.5 &&
+          position.longitude <= 45.0;
+
+        if (isTurkey) {
+          final prefs = await SharedPreferences.getInstance();
+          await prefs.setDouble('splash_cached_lat', position.latitude);
+          await prefs.setDouble('splash_cached_lon', position.longitude);
+          await prefs.setInt('splash_cached_at', DateTime.now().millisecondsSinceEpoch);
+          debugPrint('📍 Splash konum kaydedildi (Türkiye): ${position.latitude}, ${position.longitude}');
+        } else {
+          debugPrint('📍 Splash konum Türkiye dışında (${position.latitude}, ${position.longitude}), kaydedilmedi.');
+        }
     } catch (e) {
       debugPrint('📍 Splash konum alma hatası: $e');
-      // Hata olsa bile devam et, cami bulucu kendi almaya çalışır
     }
   }
 
@@ -169,7 +178,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
                 // Slogan
                 Text(
-                  'YOUR DIGITAL SANCTUARY',
+                  'DİJİTAL MANEVİ DÜNYA',
                   style: GoogleFonts.inter(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
@@ -208,7 +217,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 const SizedBox(height: 16),
 
                 Text(
-                  'LOADING PEACE',
+                  'NAMAZ VAKTİ YAKLAŞIYOR',
                   style: GoogleFonts.inter(
                     fontSize: 10,
                     fontWeight: FontWeight.w700,
@@ -220,7 +229,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
           ),
 
-          // Alt Hijri Bilgisi
+          // Alt Hicri Bilgisi (dinamik yıl)
           Positioned(
             bottom: 48,
             left: 0,
@@ -228,7 +237,7 @@ class _SplashScreenState extends State<SplashScreen> {
             child: Column(
               children: [
                 Text(
-                  '1445 Hijri',
+                  '${_currentHijriYear()} Hicri',
                   style: GoogleFonts.inter(
                     fontSize: 12,
                     fontWeight: FontWeight.w500,
@@ -237,7 +246,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'SPIRITUAL FOCUS',
+                  'MANEVİ HUZUR',
                   style: GoogleFonts.inter(
                     fontSize: 10,
                     fontWeight: FontWeight.w700,
@@ -262,5 +271,14 @@ class _SplashScreenState extends State<SplashScreen> {
         shape: BoxShape.circle,
       ),
     );
+  }
+
+  /// Yaklaşık Hicri yılını hesapla
+  int _currentHijriYear() {
+    // Her 32.5 Gregoryen yılı ≈ 33 Hicri yıl
+    // Baz: 1 Ocak 1970 = 22 Shawwal 1389
+    final now = DateTime.now();
+    final miladi = now.year + (now.month - 1) / 12.0;
+    return ((miladi - 622.3) * (33.0 / 32.0)).toInt();
   }
 }

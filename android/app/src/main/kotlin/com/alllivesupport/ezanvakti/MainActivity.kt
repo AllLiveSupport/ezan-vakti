@@ -13,9 +13,29 @@ import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 
+import android.os.Bundle
+import android.view.WindowManager
+
 class MainActivity : FlutterActivity() {
     private val SERVICE_CHANNEL = "com.alllivesupport.ezanvakti/service"
     private val BATTERY_CHANNEL = "com.alllivesupport.ezanvakti/battery"
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // Android 12, 13, 14+ kilit ekranında otomatik uyanma ve üstte görünme desteği
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+            setShowWhenLocked(true)
+            setTurnScreenOn(true)
+        } else {
+            @Suppress("DEPRECATION")
+            window.addFlags(
+                WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED or
+                WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON or
+                WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD or
+                WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
+            )
+        }
+    }
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
@@ -79,17 +99,33 @@ class MainActivity : FlutterActivity() {
 
     private fun requestBatteryOptimizationIgnore() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS).apply {
-                data = Uri.parse("package:$packageName")
+            try {
+                // 1. Önce doğrudan izin isteme diyalogunu dene (Xiaomi, Samsung, Pixel vb.)
+                val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS).apply {
+                    data = Uri.parse("package:$packageName")
+                }
+                startActivity(intent)
+            } catch (e: Exception) {
+                // 2. Diyalog açılmazsa pil kısıtlama ayarlarını aç
+                openBatteryOptimizationSettings()
             }
-            startActivity(intent)
         }
     }
 
     private fun openBatteryOptimizationSettings() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            val intent = Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
-            startActivity(intent)
+            try {
+                val intent = Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
+                startActivity(intent)
+            } catch (e: Exception) {
+                // 3. Fallback: Uygulama Detay Ayarları (Her cihazda çalışır)
+                try {
+                    val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                        data = Uri.parse("package:$packageName")
+                    }
+                    startActivity(intent)
+                } catch (_: Exception) {}
+            }
         }
     }
 
@@ -106,19 +142,33 @@ class MainActivity : FlutterActivity() {
     @RequiresApi(Build.VERSION_CODES.S)
     private fun requestExactAlarmPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            val intent = Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM).apply {
-                data = Uri.parse("package:$packageName")
+            try {
+                val intent = Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM).apply {
+                    data = Uri.parse("package:$packageName")
+                }
+                startActivity(intent)
+            } catch (e: Exception) {
+                val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                    data = Uri.parse("package:$packageName")
+                }
+                startActivity(intent)
             }
-            startActivity(intent)
         }
     }
 
     private fun openAlarmSettings() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            val intent = Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM).apply {
-                data = Uri.parse("package:$packageName")
+            try {
+                val intent = Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM).apply {
+                    data = Uri.parse("package:$packageName")
+                }
+                startActivity(intent)
+            } catch (e: Exception) {
+                val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                    data = Uri.parse("package:$packageName")
+                }
+                startActivity(intent)
             }
-            startActivity(intent)
         } else {
             val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
                 data = Uri.parse("package:$packageName")
@@ -129,21 +179,26 @@ class MainActivity : FlutterActivity() {
 
     private fun canUseFullScreenIntent(): Boolean {
         return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
-            // Android 14+ (API 34) — USE_FULL_SCREEN_INTENT özel izin gerektirir
             val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.canUseFullScreenIntent()
         } else {
-            // Android 13 ve altı — otomatik izinli
             true
         }
     }
 
     private fun requestFullScreenIntentPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
-            val intent = Intent(Settings.ACTION_MANAGE_APP_USE_FULL_SCREEN_INTENT).apply {
-                data = Uri.parse("package:$packageName")
+            try {
+                val intent = Intent(Settings.ACTION_MANAGE_APP_USE_FULL_SCREEN_INTENT).apply {
+                    data = Uri.parse("package:$packageName")
+                }
+                startActivity(intent)
+            } catch (e: Exception) {
+                val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                    data = Uri.parse("package:$packageName")
+                }
+                startActivity(intent)
             }
-            startActivity(intent)
         }
     }
 }

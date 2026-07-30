@@ -8,6 +8,7 @@ import 'package:device_info_plus/device_info_plus.dart';
 import '../../core/theme/app_theme.dart';
 import '../../shared/providers/settings_provider.dart';
 import '../../shared/providers/prayer_provider.dart';
+import '../../core/services/battery_service.dart';
 
 class AlarmSettingsScreen extends ConsumerWidget {
   const AlarmSettingsScreen({super.key});
@@ -68,7 +69,7 @@ class AlarmSettingsScreen extends ConsumerWidget {
   DateTime _getPrayerTime(dynamic times, int index) {
     if (times == null) return DateTime.now();
     switch (index) {
-      case 0: return times.fajr;
+      case 0: return times.imsak;   // İmsak (Sabah'tan ~10dk önce)
       case 1: return times.sunrise;
       case 2: return times.dhuhr;
       case 3: return times.asr;
@@ -344,6 +345,7 @@ class _PermissionBannerState extends State<_PermissionBanner> with WidgetsBindin
   bool _exactAlarmOk = true;
   bool _notifOk = true;
   bool _fullScreenOk = true;
+  bool _batteryOptOk = true;
 
   @override
   void initState() {
@@ -360,7 +362,6 @@ class _PermissionBannerState extends State<_PermissionBanner> with WidgetsBindin
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    // Kullanıcı ayarlardan dönünce izinleri tekrar kontrol et
     if (state == AppLifecycleState.resumed) {
       _checkPermissions();
     }
@@ -373,8 +374,8 @@ class _PermissionBannerState extends State<_PermissionBanner> with WidgetsBindin
       exactOk = await Permission.scheduleExactAlarm.isGranted;
     }
     final notifOk = await Permission.notification.isGranted;
+    final batteryOptOk = await BatteryOptimizationService.isBatteryOptimizationBypassed();
 
-    // Android 14+ tam ekran alarm izni kontrolü
     bool fullScreenOk = true;
     try {
       const channel = MethodChannel('com.alllivesupport.ezanvakti/battery');
@@ -388,6 +389,7 @@ class _PermissionBannerState extends State<_PermissionBanner> with WidgetsBindin
         _exactAlarmOk = exactOk;
         _notifOk = notifOk;
         _fullScreenOk = fullScreenOk;
+        _batteryOptOk = batteryOptOk;
       });
     }
   }
@@ -400,6 +402,14 @@ class _PermissionBannerState extends State<_PermissionBanner> with WidgetsBindin
         text: 'Bildirim izni verilmemiş',
         onTap: () async {
           await Permission.notification.request();
+          _checkPermissions();
+        },
+      ),
+      if (!_batteryOptOk) _Issue(
+        icon: Icons.battery_saver_rounded,
+        text: 'Pil optimizasyonunu kaldırın (Arka planda ezan sesinin kesilmemesi için)',
+        onTap: () async {
+          await BatteryOptimizationService.requestBatteryOptimizationBypass();
           _checkPermissions();
         },
       ),

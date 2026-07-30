@@ -1,6 +1,7 @@
-// lib/core/services/mosque_cache_service.dart
+import 'dart:convert';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../network/mosque_service.dart';
@@ -44,11 +45,43 @@ class MosqueCacheService {
         await db.execute('''
           CREATE INDEX idx_location ON $_tableName(search_lat, search_lon)
         ''');
-        await db.execute('''
-          CREATE INDEX idx_cached_at ON $_tableName(cached_at)
-        ''');
+        await _seedDefaultMosques(db);
       },
     );
+  }
+
+  Future<void> _seedDefaultMosques(Database db) async {
+    try {
+      final jsonString = await rootBundle.loadString('assets/data/turkey_mosques.json');
+      final list = json.decode(jsonString) as List;
+      final now = DateTime.now().millisecondsSinceEpoch;
+
+      final batch = db.batch();
+      for (final item in list) {
+        if (item is Map) {
+          final itemLat = (item['lat'] as num).toDouble();
+          final itemLon = (item['lon'] as num).toDouble();
+          batch.insert(
+            _tableName,
+            {
+              'osm_id': item['osm_id'].toString(),
+              'name': item['name'] as String? ?? 'Cami',
+              'address': item['address'] as String? ?? '',
+              'lat': itemLat,
+              'lon': itemLon,
+              'cached_at': now,
+              'search_lat': (item['search_lat'] as num?)?.toDouble() ?? itemLat,
+              'search_lon': (item['search_lon'] as num?)?.toDouble() ?? itemLon,
+            },
+            conflictAlgorithm: ConflictAlgorithm.ignore,
+          );
+        }
+      }
+      await batch.commit(noResult: true);
+      debugPrint('🕌 Türkiye genelinden ${list.length} adet güncel cami SQLite veritabanına kaydedildi!');
+    } catch (e) {
+      debugPrint('⚠️ Offline cami verisi yükleme hatası: $e');
+    }
   }
   
   /// Camileri cache'e kaydet
@@ -82,11 +115,11 @@ class MosqueCacheService {
     debugPrint('📥 ${mosques.length} cami cache\'e kaydedildi');
   }
   
-  /// Yakındaki camileri cache'ten getir (max 50km)
+  /// Yakındaki camileri cache'ten getir (Mesafe öncelikli & Sokak adı filtreli)
   Future<List<MosqueModel>> getCachedNearbyMosques({
     required double lat,
     required double lon,
-    double maxDistanceKm = 50.0,
+    double maxDistanceKm = 15.0,
   }) async {
     final db = await database;
     
@@ -98,7 +131,6 @@ class MosqueCacheService {
       whereArgs: [cutoffDate],
     );
     
-    // Basit bounding box ile filtrele (rough approximation)
     // 1 derece yaklaşık 111 km
     final latDelta = maxDistanceKm / 111.0;
     final lonDelta = maxDistanceKm / (111.0 * math.cos(lat * math.pi / 180));
@@ -112,29 +144,87 @@ class MosqueCacheService {
         lon - lonDelta,
         lon + lonDelta,
       ],
-      orderBy: 'cached_at DESC',
-      limit: 100, // Max 100 cami
     );
     
-    final mosques = results.map((row) {
+    final mosques = <MosqueModel>[];
+    for (final row in results) {
+      final name = row['name'] as String? ?? 'Cami';
+      // Cadde/sokak/numara gibi görünen isimleri filtrele
+      if (_isStreetLikeName(name)) continue;
+
       final mosque = MosqueModel(
         osmId: row['osm_id'] as String,
-        name: row['name'] as String,
+        name: name,
         address: row['address'] as String? ?? '',
         lat: row['lat'] as double,
         lon: row['lon'] as double,
       );
       
-      // Mesafeyi hesapla
       mosque.distanceMeters = _haversineMeters(lat, lon, mosque.lat, mosque.lon);
-      return mosque;
-    }).where((m) => m.distanceMeters <= maxDistanceKm * 1000).toList();
+      if (mosque.distanceMeters <= maxDistanceKm * 1000) {
+        mosques.add(mosque);
+      }
+    }
     
-    // Mesafeye göre sırala
+    // Mesafeye göre A'dan Z'ye EN YAKINDAN EN UZAĞA sırala
     mosques.sort((a, b) => a.distanceMeters.compareTo(b.distanceMeters));
     
-    debugPrint('📤 Cache\'ten ${mosques.length} cami getirildi');
-    return mosques;
+    final closestMosques = mosques.take(40).toList();
+
+    // Üst üste binen (çakışan) koordinatları ayrıştır (De-stacking Golden Spiral)
+    final coordGroups = <String, List<MosqueModel>>{};
+    for (final m in closestMosques) {
+      final key = '${m.lat.toStringAsFixed(4)}_${m.lon.toStringAsFixed(4)}';
+      coordGroups.putIfAbsent(key, () => []).add(m);
+    }
+
+    final unstackedList = <MosqueModel>[];
+    coordGroups.forEach((key, group) {
+      if (group.length == 1) {
+        unstackedList.add(group.first);
+      } else {
+        // Çakışan camileri spiral şeklinde doğal olarak çevre mahalleye dağıt
+        for (int i = 0; i < group.length; i++) {
+          final m = group[i];
+          if (i == 0) {
+            unstackedList.add(m);
+          } else {
+            final radiusMeters = (i * 140.0) + 100.0; // 100m, 240m, 380m...
+            final angleRad = i * 2.399963229728653; // Altın açı ~137.5°
+            final latOffset = (radiusMeters * math.cos(angleRad)) / 111000.0;
+            final lonOffset = (radiusMeters * math.sin(angleRad)) / (111000.0 * math.cos(m.lat * math.pi / 180));
+            
+            final newLat = m.lat + latOffset;
+            final newLon = m.lon + lonOffset;
+            final newDist = _haversineMeters(lat, lon, newLat, newLon);
+
+            unstackedList.add(MosqueModel(
+              osmId: '${m.osmId}_$i',
+              name: m.name,
+              address: m.address,
+              lat: newLat,
+              lon: newLon,
+              distanceMeters: newDist,
+            ));
+          }
+        }
+      }
+    });
+
+    unstackedList.sort((a, b) => a.distanceMeters.compareTo(b.distanceMeters));
+
+    debugPrint('📤 Cache\'ten ${unstackedList.length} en yakın cami ayrıştırılarak getirildi (Mesafe: ${unstackedList.isNotEmpty ? unstackedList.first.distanceFormatted : "0m"})');
+    return unstackedList;
+  }
+
+  bool _isStreetLikeName(String name) {
+    final lower = name.toLowerCase();
+    if (RegExp(r'^[\d\s\-\.]+$').hasMatch(name)) return true;
+    final hasStreet = lower.contains('cadde') || lower.contains('sokak') ||
+        lower.contains('bulvar') || lower.contains('nolu cad') ||
+        lower.contains(' sk') || lower.contains(' cd');
+    final hasMosque = lower.contains('cami') || lower.contains('mescit') || lower.contains('camii') || lower.contains('mosque');
+    return hasStreet && !hasMosque;
   }
   
   /// Cache'te cami var mı kontrol et

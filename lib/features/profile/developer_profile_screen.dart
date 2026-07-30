@@ -210,7 +210,7 @@ class _SocialButton extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
       child: ListTile(
         onTap: onTap,
-        shape: RoundedRectangleType.rounded.borderRadius(16),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         tileColor: color.withValues(alpha: 0.1),
         leading: Icon(icon, color: color),
         title: Text(

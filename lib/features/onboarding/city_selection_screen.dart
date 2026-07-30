@@ -132,6 +132,13 @@ class _CitySelectionScreenState extends ConsumerState<CitySelectionScreen> {
     setState(() => _detectingLocation = true);
 
     try {
+      bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+      if (!serviceEnabled) {
+        _showSnack('GPS Konum servisi kapalı. Lütfen GPS\'i açın.');
+        await Geolocator.openLocationSettings();
+        return;
+      }
+
       final permission = await Geolocator.checkPermission();
       LocationPermission finalPermission = permission;
 
@@ -140,12 +147,25 @@ class _CitySelectionScreenState extends ConsumerState<CitySelectionScreen> {
       }
 
       if (finalPermission == LocationPermission.deniedForever) {
-        _showSnack('Konum izni verilmemiş. Ayarlardan açabilirsin.');
+        _showSnack('Konum izni reddedilmiş. Ayarlardan açabilirsiniz.');
+        await Geolocator.openAppSettings();
         return;
       }
 
-      final position = await Geolocator.getCurrentPosition(
-        locationSettings: const LocationSettings(accuracy: LocationAccuracy.medium),
+      if (finalPermission == LocationPermission.denied) {
+        _showSnack('Konum izni verilmedi.');
+        return;
+      }
+
+      // Önce son bilinen konumu dene (anında sonuç verir)
+      Position? position = await Geolocator.getLastKnownPosition();
+      
+      // Son konum yoksa canlı konum iste (8s zaman aşımlı)
+      position ??= await Geolocator.getCurrentPosition(
+        locationSettings: const LocationSettings(
+          accuracy: LocationAccuracy.medium,
+          timeLimit: Duration(seconds: 8),
+        ),
       );
 
       CityModel? nearest;
@@ -158,25 +178,25 @@ class _CitySelectionScreenState extends ConsumerState<CitySelectionScreen> {
         }
       }
 
-      if (nearest != null && minDist < 80) {
-        setState(() => _selectedCity = nearest);
-        _showSnack('${nearest.name} tespit edildi ✓');
-      } else {
-        final customCity = CityModel(
-          id: 'GPS_CUSTOM',
-          name: 'Mevcut Konum',
-          lat: position.latitude,
-          lon: position.longitude,
-          timezone: 'UTC',
-          countryCode: _countryCode,
-          country: _countryName,
-          method: _countryMethod,
-        );
-        setState(() => _selectedCity = customCity);
-        _showSnack('GPS konumu belirlendi ✓');
+      // Türkiye sınırları kontrolü (Lat: 35.5 - 42.5, Lon: 25.5 - 45.0)
+      final inTurkey = position.latitude >= 35.5 &&
+          position.latitude <= 42.5 &&
+          position.longitude >= 25.5 &&
+          position.longitude <= 45.0;
+
+      if (nearest != null) {
+        if (inTurkey || minDist < 150) {
+          setState(() => _selectedCity = nearest);
+          _showSnack('${nearest.name} tespit edildi ✓');
+        } else {
+          // Emülatör veya yurt dışı konumu (örn. ABD / California)
+          setState(() => _selectedCity = nearest);
+          _showSnack('Cihaz konumu yurt dışında. En yakın il (${nearest.name}) seçildi ✓');
+        }
       }
     } catch (e) {
-      _showSnack('Konum tespit edilemedi.');
+      debugPrint('📍 Konum alma hatası: $e');
+      _showSnack('Konum tespit edilemedi. Lütfen şehir listesinden seçin.');
     } finally {
       setState(() => _detectingLocation = false);
     }
@@ -371,22 +391,26 @@ class _CitySelectionScreenState extends ConsumerState<CitySelectionScreen> {
                                 borderRadius: BorderRadius.circular(16),
                                 border: isSelected ? Border.all(color: AppTheme.primary, width: 1.5) : null,
                               ),
-                              child: ListTile(
-                                contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
-                                title: Text(
-                                  city.name,
-                                  style: TextStyle(
-                                    fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
-                                    color: tileTextColor,
+                              child: Material(
+                                color: Colors.transparent,
+                                borderRadius: BorderRadius.circular(16),
+                                child: ListTile(
+                                  contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                                  title: Text(
+                                    city.name,
+                                    style: TextStyle(
+                                      fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
+                                      color: tileTextColor,
+                                    ),
                                   ),
+                                  subtitle: city.region != null
+                                      ? Text(city.region!, style: TextStyle(fontSize: 12, color: subTextColorTile))
+                                      : null,
+                                  trailing: isSelected
+                                      ? const Icon(Icons.check_circle_rounded, color: AppTheme.primary)
+                                      : Icon(Icons.chevron_right_rounded, color: subTextColor),
+                                  onTap: () => setState(() => _selectedCity = city),
                                 ),
-                                subtitle: city.region != null
-                                    ? Text(city.region!, style: TextStyle(fontSize: 12, color: subTextColorTile))
-                                    : null,
-                                trailing: isSelected
-                                    ? const Icon(Icons.check_circle_rounded, color: AppTheme.primary)
-                                    : Icon(Icons.chevron_right_rounded, color: subTextColor),
-                                onTap: () => setState(() => _selectedCity = city),
                               ),
                             );
                           },

@@ -20,8 +20,11 @@ class PrayerTimesJsonService {
 
     try {
       // Dosya adını oluştur - normalize edilmiş şehir adı
-      // Örnek: Adana -> Adana_2026.json, İstanbul -> Istanbul_2026.json
-      final normalizedCity = _normalizeCityName(cityName);
+      String targetCity = cityName;
+      if (targetCity == 'Mevcut Konum' || targetCity.startsWith('Mevcut') || targetCity == 'GPS_CUSTOM') {
+        targetCity = 'Adana';
+      }
+      final normalizedCity = _normalizeCityName(targetCity);
       final fileName = '${normalizedCity}_$year.json';
       final path = 'assets/data/prayer_times/$year/$fileName';
       

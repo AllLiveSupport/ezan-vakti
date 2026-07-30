@@ -3,6 +3,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:latlong2/latlong.dart';
 import '../../core/network/mosque_service.dart';
 import 'prayer_provider.dart';
+import 'settings_provider.dart';
 
 final mosqueServiceProvider = Provider<MosqueService>((ref) {
   return MosqueService();
@@ -25,10 +26,16 @@ final userLocationProvider = StreamProvider<LatLng?>((ref) async* {
     
     if (permission == LocationPermission.deniedForever) return;
 
+    // Önce son bilinen konumu hızlıca ver
+    final lastKnown = await Geolocator.getLastKnownPosition();
+    if (lastKnown != null) {
+      yield LatLng(lastKnown.latitude, lastKnown.longitude);
+    }
+
     final position = await Geolocator.getCurrentPosition(
       locationSettings: const LocationSettings(
-        accuracy: LocationAccuracy.low,
-        timeLimit: Duration(seconds: 5),
+        accuracy: LocationAccuracy.medium,
+        timeLimit: Duration(seconds: 8),
       ),
     );
     yield LatLng(position.latitude, position.longitude);
@@ -64,13 +71,28 @@ final nearbyMosquesProvider = FutureProvider<List<MosqueModel>>((ref) async {
 
   final city = ref.watch(activeCityProvider).asData?.value;
   
-  // Öncelik: Manuel Seçilen > Canlı GPS > Şehir Merkezi
-  final lat = manualCenter?.latitude ?? userLoc?.latitude ?? city?.lat;
-  final lon = manualCenter?.longitude ?? userLoc?.longitude ?? city?.lon;
+  final isTurkeyUserLoc = userLoc != null &&
+      userLoc.latitude >= 35.5 && userLoc.latitude <= 42.5 &&
+      userLoc.longitude >= 25.5 && userLoc.longitude <= 45.0;
+
+  // Öncelik: Manuel Seçilen > Türkiye GPS Konumu > Seçili Şehir Merkezi
+  final lat = manualCenter?.latitude ?? (isTurkeyUserLoc ? userLoc.latitude : city?.lat);
+  final lon = manualCenter?.longitude ?? (isTurkeyUserLoc ? userLoc.longitude : city?.lon);
 
   if (lat == null || lon == null) return [];
 
+  // Ayarlardan cami veri kaynağını ve arama yarıçapını oku
+  final settings = ref.watch(settingsProvider).asData?.value;
+  final useLocalOnly = settings?.mosqueDataSource == 'local';
+  final radiusKm = settings?.mosqueSearchRadiusKm ?? 5;
+  final radiusMeters = (radiusKm * 1000).toDouble();
+
   final service = ref.read(mosqueServiceProvider);
-  return service.getNearbyMosques(lat: lat, lon: lon);
+  return service.getNearbyMosques(
+    lat: lat,
+    lon: lon,
+    radiusMeters: radiusMeters,
+    useLocalOnly: useLocalOnly,
+  );
 });
 

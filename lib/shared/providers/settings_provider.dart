@@ -11,6 +11,8 @@ const _kThemeMode = 'theme_mode';
 const _kPrayerAdhan = 'prayer_adhan_'; // prefix
 const _kPrayerNotif = 'prayer_notif_'; // prefix
 const _kPrayerOffset = 'prayer_offset_'; // prefix
+const _kMosqueDataSource = 'mosque_data_source'; // 'online' | 'local'
+const _kMosqueRadius = 'mosque_radius_km';
 
 // ─── Tema Varyantı ──────────────────────────────────────────────────
 enum AppThemeVariant {
@@ -59,9 +61,13 @@ class AppSettings {
   final String madhab; 
   final String highLatitudes; 
   final String adhanSound; 
-  final AppThemeVariant themeVariant; 
+  final AppThemeVariant themeVariant;
+  /// Cami veri kaynağı: 'online' = Overpass API (OSM), 'local' = Diyanet yerel veritabanı
+  final String mosqueDataSource;
+  /// Cami arama yarıçapı (km): 1, 2, 3, 5, 10, 15
+  final int mosqueSearchRadiusKm;
 
-  // Yeni: Her vakit için ayarlar (0: İmsak, 1: Güneş, 2: Öğle, 3: İkindi, 4: Akşam, 5: Yatsı)
+  // Her vakit için ayarlar (0: İmsak, 1: Güneş, 2: Öğle, 3: İkindi, 4: Akşam, 5: Yatsı)
   final List<bool> prayerAdhanEnabled;
   final List<bool> prayerNotifEnabled;
   final List<int> prayerOffsets; // Dakika cinsinden (negatif = önce)
@@ -72,9 +78,11 @@ class AppSettings {
     this.highLatitudes = 'None',
     this.adhanSound = 'mekke',
     this.themeVariant = AppThemeVariant.system,
-    this.prayerAdhanEnabled = const [true, true, true, true, true, true],
-    this.prayerNotifEnabled = const [true, true, true, true, true, true],
-    this.prayerOffsets = const [0, 0, 0, 0, 0, 0],
+    this.mosqueDataSource = 'online',
+    this.mosqueSearchRadiusKm = 5,
+    this.prayerAdhanEnabled = const [true, true, true, true, true, true, true],
+    this.prayerNotifEnabled = const [true, true, true, true, true, true, true],
+    this.prayerOffsets = const [0, 0, 0, 0, 0, 0, 0],
   });
 
   AppSettings copyWith({
@@ -83,6 +91,8 @@ class AppSettings {
     String? highLatitudes,
     String? adhanSound,
     AppThemeVariant? themeVariant,
+    String? mosqueDataSource,
+    int? mosqueSearchRadiusKm,
     List<bool>? prayerAdhanEnabled,
     List<bool>? prayerNotifEnabled,
     List<int>? prayerOffsets,
@@ -93,6 +103,8 @@ class AppSettings {
       highLatitudes: highLatitudes ?? this.highLatitudes,
       adhanSound: adhanSound ?? this.adhanSound,
       themeVariant: themeVariant ?? this.themeVariant,
+      mosqueDataSource: mosqueDataSource ?? this.mosqueDataSource,
+      mosqueSearchRadiusKm: mosqueSearchRadiusKm ?? this.mosqueSearchRadiusKm,
       prayerAdhanEnabled: prayerAdhanEnabled ?? this.prayerAdhanEnabled,
       prayerNotifEnabled: prayerNotifEnabled ?? this.prayerNotifEnabled,
       prayerOffsets: prayerOffsets ?? this.prayerOffsets,
@@ -111,9 +123,9 @@ class SettingsNotifier extends AsyncNotifier<AppSettings> {
     final tModeStr = _prefs.getString(_kThemeMode) ?? 'system';
     final tVariant = AppThemeVariant.fromPrefsString(tModeStr);
 
-    final adhanList = List.generate(6, (i) => _prefs.getBool('$_kPrayerAdhan$i') ?? true);
-    final notifList = List.generate(6, (i) => _prefs.getBool('$_kPrayerNotif$i') ?? true);
-    final offsetList = List.generate(6, (i) => _prefs.getInt('$_kPrayerOffset$i') ?? 0);
+    final adhanList = List.generate(7, (i) => _prefs.getBool('$_kPrayerAdhan$i') ?? true);
+    final notifList = List.generate(7, (i) => _prefs.getBool('$_kPrayerNotif$i') ?? true);
+    final offsetList = List.generate(7, (i) => _prefs.getInt('$_kPrayerOffset$i') ?? 0);
 
     return AppSettings(
       calculationMethod: _prefs.getString(_kCalcMethod) ?? 'Turkey',
@@ -121,6 +133,8 @@ class SettingsNotifier extends AsyncNotifier<AppSettings> {
       highLatitudes: _prefs.getString(_kHighLatitudes) ?? 'None',
       adhanSound: _prefs.getString(_kAdhanSound) ?? 'mekke',
       themeVariant: tVariant,
+      mosqueDataSource: _prefs.getString(_kMosqueDataSource) ?? 'online',
+      mosqueSearchRadiusKm: _prefs.getInt(_kMosqueRadius) ?? 5,
       prayerAdhanEnabled: adhanList,
       prayerNotifEnabled: notifList,
       prayerOffsets: offsetList,
@@ -171,6 +185,16 @@ class SettingsNotifier extends AsyncNotifier<AppSettings> {
     newList[index] = minutes;
     await _prefs.setInt('$_kPrayerOffset$index', minutes);
     state = AsyncData(state.value!.copyWith(prayerOffsets: newList));
+  }
+
+  Future<void> updateMosqueDataSource(String value) async {
+    await _prefs.setString(_kMosqueDataSource, value);
+    state = AsyncData(state.value!.copyWith(mosqueDataSource: value));
+  }
+
+  Future<void> updateMosqueSearchRadiusKm(int radiusKm) async {
+    await _prefs.setInt(_kMosqueRadius, radiusKm);
+    state = AsyncData(state.value!.copyWith(mosqueSearchRadiusKm: radiusKm));
   }
 }
 

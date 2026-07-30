@@ -40,7 +40,7 @@ class PrayerTimesModel {
     required String cityId,
     required Map<String, dynamic> json,
     required String calculationMethod,
-    List<int> offsets = const [0, 0, 0, 0, 0, 0],
+    List<int> offsets = const [0, 0, 0, 0, 0, 0, 0], // 7 vakit: İmsak,Sabah,Güneş,Öğle,İkindi,Akşam,Yatsı
   }) {
     final timings = json['timings'] as Map<String, dynamic>;
     final dateData = json['date'] as Map<String, dynamic>;

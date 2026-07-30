@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../core/theme/app_theme.dart';
 import '../../shared/providers/settings_provider.dart';
+import '../../core/services/battery_service.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -12,19 +13,14 @@ class SettingsScreen extends ConsumerWidget {
     final settingsAsync = ref.watch(settingsProvider);
 
     return Scaffold(
-      extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: const Text('Ayarlar'),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
         centerTitle: true,
       ),
       body: settingsAsync.when(
         data: (settings) => CustomScrollView(
           slivers: [
-            SliverToBoxAdapter(
-              child: SizedBox(height: MediaQuery.paddingOf(context).top + kToolbarHeight + 20),
-            ),
+            const SliverToBoxAdapter(child: SizedBox(height: 12)),
             
             // Hesaplama Yöntemi
             SliverToBoxAdapter(
@@ -133,6 +129,76 @@ class SettingsScreen extends ConsumerWidget {
               ),
             ),
 
+            // Cami Veri Kaynağı Ayarı
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                child: _SettingsCard(
+                  title: 'Cami Verisi Kaynağı',
+                  icon: Icons.mosque_outlined,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // Online seçeneği
+                      _DataSourceOption(
+                        value: 'online',
+                        groupValue: settings.mosqueDataSource,
+                        icon: Icons.cloud_outlined,
+                        title: 'Online (OpenStreetMap)',
+                        subtitle: 'Canlı ve güncel veri · GPS koordinatlı · İnternet gerektirir',
+                        onChanged: (v) => ref.read(settingsProvider.notifier).updateMosqueDataSource(v),
+                      ),
+                      const Divider(height: 8),
+                      // Local seçeneği
+                      _DataSourceOption(
+                        value: 'local',
+                        groupValue: settings.mosqueDataSource,
+                        icon: Icons.storage_outlined,
+                        title: 'Yerel Veritabanı (Offline • 90.524 Cami)',
+                        subtitle: 'Çevrimdışı Türkiye cami rehberi · İnternet gerektirmez',
+                        onChanged: (v) => ref.read(settingsProvider.notifier).updateMosqueDataSource(v),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+
+            // Cami Arama Mesafesi (Yarıçap)
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                child: Builder(builder: (bCtx) {
+                  final isDark = Theme.of(bCtx).brightness == Brightness.dark;
+                  return _SettingsCard(
+                    title: 'Cami Arama Mesafesi (Yarıçap)',
+                    icon: Icons.radar_outlined,
+                    child: DropdownButtonHideUnderline(
+                      child: DropdownButton<int>(
+                        isExpanded: true,
+                        value: settings.mosqueSearchRadiusKm,
+                        dropdownColor: isDark ? AppTheme.surfaceContainerHighDark : AppTheme.surfaceContainerHigh,
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w600),
+                        items: const [
+                          DropdownMenuItem(value: 1, child: Text('1 km (Çok Yakın Çevre)')),
+                          DropdownMenuItem(value: 2, child: Text('2 km (Yakın Mahalle)')),
+                          DropdownMenuItem(value: 3, child: Text('3 km (Bölgesel)')),
+                          DropdownMenuItem(value: 5, child: Text('5 km (Şehir İçi • Varsayılan)')),
+                          DropdownMenuItem(value: 10, child: Text('10 km (Geniş Bölge)')),
+                          DropdownMenuItem(value: 15, child: Text('15 km (Tüm İlçe/Şehir)')),
+                        ],
+                        onChanged: (val) {
+                          if (val != null) {
+                            ref.read(settingsProvider.notifier).updateMosqueSearchRadiusKm(val);
+                          }
+                        },
+                      ),
+                    ),
+                  );
+                }),
+              ),
+            ),
+
             const SliverToBoxAdapter(child: SizedBox(height: 20)),
 
             // Geliştirici ve Destek (Premium Section)
@@ -146,6 +212,14 @@ class SettingsScreen extends ConsumerWidget {
                       subtitle: 'Ezan ve uyarı ayarları',
                       icon: Icons.alarm_on_rounded,
                       onTap: () => Navigator.pushNamed(context, '/alarms'),
+                    ),
+                    const SizedBox(height: 12),
+                    _MenuActionTile(
+                      title: 'Pil Optimizasyonu ve İzinler',
+                      subtitle: 'Arka planda kesintisiz ezan için pil kısıtlamasını kaldır',
+                      icon: Icons.battery_saver_rounded,
+                      iconColor: Colors.orange[800],
+                      onTap: () => BatteryOptimizationService.requestAllPermissions(context),
                     ),
                     const SizedBox(height: 12),
                     _MenuActionTile(
@@ -185,7 +259,80 @@ class SettingsScreen extends ConsumerWidget {
   }
 }
 
+// ─── Cami Veri Kaynağı Seçenek Satırı ────────────────────────────────────
+class _DataSourceOption extends StatelessWidget {
+  final String value;
+  final String groupValue;
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final ValueChanged<String> onChanged;
+
+  const _DataSourceOption({
+    required this.value,
+    required this.groupValue,
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final isSelected = value == groupValue;
+    return InkWell(
+      onTap: () => onChanged(value),
+      borderRadius: BorderRadius.circular(12),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+        child: Row(
+          children: [
+            Icon(icon,
+                size: 22,
+                color: isSelected ? AppTheme.primary : Theme.of(context).colorScheme.outline),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
+                            color: isSelected ? AppTheme.primary : null,
+                          )),
+                  const SizedBox(height: 2),
+                  Text(subtitle,
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            color: Theme.of(context).colorScheme.outline,
+                          )),
+                ],
+              ),
+            ),
+            // Seçim göstergesi (Radio yerine basit daire)
+            Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: isSelected ? AppTheme.primary : Theme.of(context).colorScheme.outline,
+                  width: 2,
+                ),
+                color: isSelected ? AppTheme.primary : Colors.transparent,
+              ),
+              child: isSelected
+                  ? const Icon(Icons.check, size: 12, color: Colors.white)
+                  : null,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class _MenuActionTile extends StatelessWidget {
+
   final String title, subtitle;
   final IconData icon;
   final Color? iconColor;
